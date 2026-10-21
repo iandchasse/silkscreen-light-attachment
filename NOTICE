@@ -23,8 +23,10 @@ Third-party content (NOT covered by the license above):
 - pcb/lib/silkscreen-light-attachment.kicad_sym copies symbols from the KiCad
   standard libraries (Device:LED, renamed LED_3014, and Device:R), and
   pcb/lib/silkscreen-light-attachment.pretty/R_0805_2012Metric.kicad_mod is a
-  copy of the KiCad standard footprint with its silkscreen widened. These remain under CC-BY-SA-4.0 with the KiCad
-  library exception.
+  copy of the KiCad standard footprint with its silkscreen widened, and
+  pcb/lib/silkscreen-light-attachment.3dshapes/R_0805_2012Metric.step is a copy of
+  the KiCad standard 3D model (Resistor_SMD.3dshapes), copied by pcb/tools/generate.py.
+  These remain under CC-BY-SA-4.0 with the KiCad library exception.
 - housing/reference/case-426-standard/ (tub.stl, lid.stl) are copies of the
   Silkscreen 4.26" case's standard tub and lid from the silkscreen-enclosures
   project (idc LLC), included so the housing's fit checks run from a clone; see
