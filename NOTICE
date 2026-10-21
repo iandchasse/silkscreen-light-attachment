@@ -1,0 +1,43 @@
+Silkscreen light attachment — clip-on warm/cool top-edge reading light for the Silkscreen e-reader (plugs into J6 through the stock case)
+
+Copyright © 2026 idc LLC.
+
+This source describes Open Hardware and is licensed under the CERN-OHL-S v2.
+
+You may redistribute and modify this source and make products using it under the
+terms of the CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+(CERN-OHL-S v2, https://ohwr.org/cern_ohl_s_v2.txt; full text in ./LICENSE).
+
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF
+MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
+Please see the CERN-OHL-S v2 for applicable conditions.
+
+Companion to https://github.com/iandchasse/silkscreen-pcb
+
+SPDX-License-Identifier: CERN-OHL-S-2.0
+
+-------------------------------------------------------------------------------
+
+Third-party content (NOT covered by the license above):
+
+- pcb/lib/silkscreen-light-attachment.kicad_sym copies symbols from the KiCad
+  standard libraries (Device:LED, renamed LED_3014, and Device:R), and
+  pcb/lib/silkscreen-light-attachment.pretty/R_0805_2012Metric.kicad_mod is a
+  copy of the KiCad standard footprint with its silkscreen widened. These remain under CC-BY-SA-4.0 with the KiCad
+  library exception.
+- housing/reference/case-426-standard/ (tub.stl, lid.stl) are copies of the
+  Silkscreen 4.26" case's standard tub and lid from the silkscreen-enclosures
+  project (idc LLC), included so the housing's fit checks run from a clone; see
+  PROVENANCE.md there.
+- Third-party reference material used as design evidence (a datasheet page image,
+  LCSC/JLCPCB and EasyEDA part data) is kept locally in pcb/docs/sources/ and is
+  not distributed with this source.
+- enclosures/silkscreen-enclosure-claude/, when present, is a local fit-reference
+  copy of a separate project. It is not part of this source and is not tracked
+  in this repository.
+- All other footprints (the Hongli 3014 LED, J6_PLUG_1x2_P5_P6, J6_PLUG_1x1_P11
+  and NPTH_4.80mm), the symbols written by the generator (J6_PLUG_1x2,
+  J6_PLUG_1x1), the 3D models made by
+  pcb/tools/make_step_models.py, the housing CadQuery sources and outputs, and
+  every script under pcb/tools/, housing/src/ and tools/ are
+  project-made and covered by the project license.

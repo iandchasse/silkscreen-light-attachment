@@ -1,0 +1,649 @@
+{
+ "seated": {
+  "pass": true,
+  "rows": {
+   "base_nb": {
+    "vol_mm3": 0.001,
+    "min_gap": 0.0
+   },
+   "lid": {
+    "vol_mm3": 0.0,
+    "min_gap": 1.489
+   },
+   "pcb": {
+    "vol_mm3": 0.0,
+    "min_gap": 1.0
+   },
+   "leds": {
+    "vol_mm3": 0.0,
+    "min_gap": 3.0
+   },
+   "resistors": {
+    "vol_mm3": 0.0,
+    "min_gap": 1.068
+   },
+   "header_bodies": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.235
+   },
+   "pins": {
+    "vol_mm3": 0.0,
+    "min_gap": 1.165
+   },
+   "bumps (designed)": {
+    "vol_mm3": 0.719,
+    "depth_z": 0.1
+   }
+  },
+  "note": "designed contacts: floor on the top face (gap 0), bump ridges 0.10 into the back face; everything else must not intersect"
+ },
+ "fit": {
+  "pass": true,
+  "rows": {
+   "base_nb / lid": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.1
+   },
+   "base_nb / pcb": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.0
+   },
+   "lid / pcb": {
+    "vol_mm3": -0.0,
+    "min_gap": 0.0
+   },
+   "base_nb / leds": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.3
+   },
+   "lid / leds": {
+    "vol_mm3": 0.0,
+    "min_gap": 1.0
+   },
+   "base_nb / resistors": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.99
+   },
+   "base_nb / header_bodies": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.235
+   },
+   "lid / pins": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.3
+   },
+   "base_nb / pins": {
+    "vol_mm3": 0.0,
+    "min_gap": 1.165
+   }
+  },
+  "pcba_float_0.19": {
+   "dx 0.19 dz 0": 0.0,
+   "dx -0.19 dz 0": -0.0,
+   "dx 0 dz 0.19": -0.0,
+   "dx 0 dz -0.19": -0.0
+  },
+  "note": "PCB lies on the floor (y 116.6) and under the roof (117.6): gap 0 is the clamp. Float: boss dia 4.40 in the dia 4.8 holes; lid wall 0.3 off the PCB edge."
+ },
+ "pins": {
+  "pass": true,
+  "engagement_nominal": [
+   4.72,
+   5.05
+  ],
+  "worst_case": [
+   4.39,
+   5.38
+  ],
+  "limits": [
+   3.7,
+   6.0
+  ],
+  "stack_tol": 0.33,
+  "post_tip_y": 108.1,
+  "pin_to_opening_edge_min": 1.165
+ },
+ "light": {
+  "x_range_checked": [
+   -0.2,
+   60.2
+  ],
+  "base": {
+   "PLAIN": 0,
+   "T01C": 0,
+   "FT01C": 0,
+   "min_margin_to_grazing_ray_z": 0.218,
+   "lowest_y_in_front_of_face": 112.6
+  },
+  "lid": {
+   "PLAIN": 0,
+   "T01C": 0,
+   "FT01C": 0,
+   "min_margin_to_grazing_ray_z": null,
+   "lowest_y_in_front_of_face": null
+  },
+  "visor": {
+   "bottom_y": 115.2,
+   "inner_z": 11.3,
+   "hides_emitter_edge_below_deg": 29.4,
+   "eye_y_at_z300_that_first_sees_the_emitter": -47.8,
+   "note": "page-bound rays all go -Y/-Z from z <= 10.06; the visor is at z >= 11.3, so it never enters the wedge"
+  },
+  "pass": true,
+  "rule": "no housing surface point (x -0.2..60.2) may lie on a ray from the emitter (y 115.90, z 8.94..10.06) to the active area that clears the window top edge (109.10, 6.00)"
+ },
+ "pcba_stl": {
+  "pass": true,
+  "file": "pcb\\production\\3d\\silkscreen-light-attachment_pcba_E.stl",
+  "mtime": "Fri Sep 25 23:51:41 2026",
+  "bodies": 48,
+  "bounds": [
+   [
+    -2.5,
+    108.1,
+    -6.0
+   ],
+   [
+    62.5,
+    119.6,
+    11.0
+   ]
+  ],
+  "rows": {
+   "base_nb": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.085
+   },
+   "lid": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.005
+   },
+   "case": {
+    "vol_mm3": 0.0,
+    "min_gap": 0.235
+   }
+  },
+  "intersecting_bodies": []
+ },
+ "screws": {
+  "screw": "M2 x 3 pan head, ISO 7045 (cross) or ISO 14583 (hexalobular); machine screw or thread-forming for plastics",
+  "pilot_d": 1.6,
+  "pilot_bottom_y": 115.8,
+  "skin_design": 0.2,
+  "counterbore_floor_y": 118.9,
+  "head_top_y_at_k_max": 120.5,
+  "lid_top_y": 120.5,
+  "lid_top_above_case": 4.9,
+  "tip_y_nominal": 115.9,
+  "tip_to_pilot_bottom": 0.1,
+  "tip_above_case_top": 0.3,
+  "longest_screw_that_seats": 3.1,
+  "thread_engagement_mm": 2.2,
+  "thread_engagement_pitches": 5.5,
+  "thread_depth_radial_nominal": 0.2,
+  "engagement_split": {
+   "boss above the floor": 1.5,
+   "floor": 0.7
+  },
+  "screw_4mm": {
+   "bottoms_at_y": 115.8,
+   "head_proud_of_top": 0.9,
+   "tip_above_case_top": 0.2
+  },
+  "holes": {
+   "x 10.0": {
+    "skin_measured": 0.2,
+    "material_in_pilot_mm3": 0.0
+   },
+   "x 38.0": {
+    "skin_measured": 0.2,
+    "material_in_pilot_mm3": 0.0
+   }
+  },
+  "pass": true,
+  "rule": "pilot blind with >= 0.2 skin; nominal 3.0 mm screw tip >= 0.05 above the pilot bottom with a k-max head on the counterbore floor; head top <= lid top; lid top <= 4.9 above the case"
+ },
+ "keepout": {
+  "lowest_base_y": 103.5,
+  "right_min_z_below_107": 2.17,
+  "left_min_z_below_107": 2.17,
+  "right_min_x_below_107": 62.29,
+  "guide_inner_faces": "x -4.14 / 64.14 (0.05 off the case sides) + the wraps round the front vertical corners",
+  "pass": true,
+  "rule": "right side below y 107.0: z >= 2.0 (SW10 slot y 89.8..106.0, z <= 0.6); left side plain above y 91"
+ },
+ "sweep": {
+  "pass": true,
+  "h_post_tips_at_J6_face": [
+   5.05,
+   4.72
+  ],
+  "h_header_bodies_enter_opening": 1.5,
+  "x_play_at_tips": {
+   "5.05": 0.052,
+   "4.72": 0.052
+  },
+  "z_play_at_tips": {
+   "5.05": 0.052,
+   "4.72": 0.047
+  },
+  "h_x_play_within_0.12": 7.0,
+  "h_x_play_within": 8.0,
+  "h_z_play_within": 7.5,
+  "h_bumps_touch_(sampled)": 6.0,
+  "collisions_at_h": [],
+  "rows": [
+   {
+    "h": 10.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": null,
+    "x-": null,
+    "z+": null,
+    "z-": 0.619
+   },
+   {
+    "h": 9.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": 0.787,
+    "x-": 0.787,
+    "z+": null,
+    "z-": 0.211
+   },
+   {
+    "h": 8.5,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": 0.516,
+    "x-": 0.516,
+    "z+": null,
+    "z-": 0.127
+   },
+   {
+    "h": 8.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": 0.319,
+    "x-": 0.319,
+    "z+": 0.628,
+    "z-": 0.084
+   },
+   {
+    "h": 7.5,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": 0.188,
+    "x-": 0.188,
+    "z+": 0.267,
+    "z-": 0.061
+   },
+   {
+    "h": 7.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": 0.112,
+    "x-": 0.112,
+    "z+": 0.094,
+    "z-": 0.052
+   },
+   {
+    "h": 6.5,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.0,
+    "x+": 0.08,
+    "x-": 0.08,
+    "z+": 0.047,
+    "z-": 0.052
+   },
+   {
+    "h": 6.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.099,
+    "x+": 0.066,
+    "x-": 0.066,
+    "z+": 0.047,
+    "z-": 0.052
+   },
+   {
+    "h": 5.5,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.631,
+    "x+": 0.056,
+    "x-": 0.056,
+    "z+": 0.047,
+    "z-": 0.052
+   },
+   {
+    "h": 5.05,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.052,
+    "x-": 0.052,
+    "z+": 0.047,
+    "z-": 0.052
+   },
+   {
+    "h": 4.72,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.052,
+    "x-": 0.052,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 4.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.047,
+    "x-": 0.047,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 3.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.047,
+    "x-": 0.047,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 2.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.047,
+    "x-": 0.047,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 1.5,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.047,
+    "x-": 0.047,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 1.0,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.047,
+    "x-": 0.047,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 0.5,
+    "collision_mm3": 0.0,
+    "bumps_mm3": 0.719,
+    "x+": 0.047,
+    "x-": 0.047,
+    "z+": 0.047,
+    "z-": 0.047
+   },
+   {
+    "h": 0.0,
+    "collision_mm3": 0.001,
+    "bumps_mm3": 0.719,
+    "x+": 0.0,
+    "x-": 0.0,
+    "z+": 0.0,
+    "z-": 0.0
+   }
+  ],
+  "rule": "-Y insertion; play = free lateral travel of the base before it touches the case (None = > 1.2); when the post tips reach the J6 face X play <= 0.12 (front-corner X guides) and Z play <= 0.35; no collision except the bump ridges; \"within\" = highest sampled h from which the play stays under the limit down to seated"
+ },
+ "print": {
+  "pass": true,
+  "parts": {
+   "base": {
+    "orientation": "on its back face (back jaw on the bed)",
+    "print_height": 16.45,
+    "watertight": true,
+    "overhang_patches": 8,
+    "bed_edge_rounds": [
+     {
+      "area": 14.97,
+      "width": 1.34,
+      "z": [
+       0.08,
+       0.76
+      ],
+      "bbox_xy": [
+       -4.2,
+       0.0,
+       -2.8,
+       9.6
+      ],
+      "ok": true,
+      "bed_edge": true
+     },
+     {
+      "area": 14.97,
+      "width": 1.34,
+      "z": [
+       0.08,
+       0.76
+      ],
+      "bbox_xy": [
+       62.8,
+       0.0,
+       64.2,
+       9.6
+      ],
+      "ok": true,
+      "bed_edge": true
+     }
+    ],
+    "overhang_failing": [],
+    "bridges_accepted": [
+     {
+      "area": 183.48,
+      "width": 2.13,
+      "z": [
+       13.57,
+       14.0
+      ],
+      "bbox_xy": [
+       -3.5,
+       -3.4,
+       63.5,
+       7.9
+      ],
+      "ok": true,
+      "bed_edge": false
+     },
+     {
+      "area": 4.61,
+      "width": 1.01,
+      "z": [
+       4.75,
+       5.26
+      ],
+      "bbox_xy": [
+       8.6,
+       9.6,
+       11.4,
+       11.1
+      ],
+      "ok": true,
+      "bed_edge": false
+     },
+     {
+      "area": 4.61,
+      "width": 1.01,
+      "z": [
+       4.75,
+       5.26
+      ],
+      "bbox_xy": [
+       36.6,
+       9.6,
+       39.4,
+       11.1
+      ],
+      "ok": true,
+      "bed_edge": false
+     },
+     {
+      "area": 16.34,
+      "width": 0.94,
+      "z": [
+       8.16,
+       8.16
+      ],
+      "bbox_xy": [
+       42.6,
+       8.6,
+       58.9,
+       9.6
+      ],
+      "ok": true,
+      "bed_edge": false
+     },
+     {
+      "area": 2.57,
+      "width": 0.75,
+      "z": [
+       7.56,
+       7.75
+      ],
+      "bbox_xy": [
+       9.5,
+       8.8,
+       10.5,
+       11.1
+      ],
+      "ok": true,
+      "bed_edge": false
+     },
+     {
+      "area": 2.57,
+      "width": 0.75,
+      "z": [
+       7.56,
+       7.75
+      ],
+      "bbox_xy": [
+       37.5,
+       8.8,
+       38.5,
+       11.1
+      ],
+      "ok": true,
+      "bed_edge": false
+     }
+    ],
+    "thin_min_undeclared": 1.182,
+    "thin_clusters_undeclared": [],
+    "declared_thin_min": {
+     "floor 1.0 (contract) and its run-out into the corners": 0.99,
+     "blind-pilot skin 0.2 at x 10.0": 0.2,
+     "blind-pilot skin 0.2 at x 38.0": 0.2
+    },
+    "pass": true
+   },
+   "lid": {
+    "orientation": "top-down (roof on the bed)",
+    "print_height": 5.3,
+    "watertight": true,
+    "overhang_patches": 3,
+    "bed_edge_rounds": [
+     {
+      "area": 237.7,
+      "width": 1.44,
+      "z": [
+       0.05,
+       1.46
+      ],
+      "bbox_xy": [
+       -3.1,
+       -7.8,
+       63.1,
+       12.4
+      ],
+      "ok": true,
+      "bed_edge": true
+     },
+     {
+      "area": 11.71,
+      "width": 1.05,
+      "z": [
+       1.6,
+       1.6
+      ],
+      "bbox_xy": [
+       7.7,
+       -3.3,
+       12.3,
+       1.3
+      ],
+      "ok": true,
+      "bed_edge": true
+     },
+     {
+      "area": 11.71,
+      "width": 1.05,
+      "z": [
+       1.6,
+       1.6
+      ],
+      "bbox_xy": [
+       35.7,
+       -3.3,
+       40.3,
+       1.3
+      ],
+      "ok": true,
+      "bed_edge": true
+     }
+    ],
+    "overhang_failing": [],
+    "bridges_accepted": [],
+    "thin_min_undeclared": 1.19,
+    "thin_clusters_undeclared": [],
+    "declared_thin_min": {
+     "tail-pocket skin 0.6": 0.6,
+     "under-head layer 0.7 at x 10.0": 0.7,
+     "under-head layer 0.7 at x 38.0": 0.7
+    },
+    "pass": true
+   }
+  },
+  "rule": "overhang > 50.0 deg from vertical fails unless narrower than 3.0 mm (bridge) or a bed-edge round (patch top <= 1.6 mm above the bed; cosmetic droop); walls >= 1.2 except declared"
+ },
+ "pass": true,
+ "meta": {
+  "pcba_source": "geometry.json rev B (2026-09-25)",
+  "lid_top_y": 120.5,
+  "counterbore_floor_y": 118.9,
+  "screw": {
+   "name": "M2 x 3 pan head, ISO 7045 (cross) or ISO 14583 (hexalobular); machine screw or thread-forming for plastics",
+   "d": 2.0,
+   "L": 3.0,
+   "pitch": 0.4,
+   "head_d": 4.0,
+   "head_k": 1.6,
+   "L_tol": 0.2
+  },
+  "screw_tip_y": 115.9,
+  "pilot_bottom_y": 115.8,
+  "thread_in_base_mm": 2.2,
+  "x_guides": {
+   "fin_y": 103.5,
+   "fin_z_at_skirt": 2.45,
+   "slope_deg": 45,
+   "r_skirt": 1.0,
+   "r_tip": 1.5
+  },
+  "volumes_mm3": {
+   "base": 2724.8,
+   "lid": 4039.3
+  }
+ }
+}

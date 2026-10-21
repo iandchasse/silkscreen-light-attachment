@@ -1,0 +1,3 @@
+# Store every file exactly as it is on disk (no line-ending conversion either way): the KiCad outputs, Gerbers and
+# STEP files here mix CRLF and LF, and the committed bytes must be the bytes that were checked.
+* -text

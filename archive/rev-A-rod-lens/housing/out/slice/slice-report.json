@@ -1,0 +1,44 @@
+{
+ "presets": {
+  "machine": "Elegoo Centauri Carbon 2 0.4 nozzle",
+  "process": "0.20mm Standard @Elegoo CC2 0.4 nozzle",
+  "filament": "Elegoo PETG @ECC2"
+ },
+ "overrides": {
+  "process": {
+   "wall_loops": "3",
+   "sparse_infill_density": "30%",
+   "enable_support": "0"
+  }
+ },
+ "clip": {
+  "exit": 0,
+  "gcode": "plate_1.gcode",
+  "warnings": [],
+  "time": "21m 3s",
+  "grams": "3.95",
+  "layers": "77",
+  "filament_type": "PETG",
+  "support_used": "0"
+ },
+ "cover": {
+  "exit": 0,
+  "gcode": "plate_1.gcode",
+  "warnings": [],
+  "time": "24m 24s",
+  "grams": "7.98",
+  "layers": "67",
+  "filament_type": "PETG",
+  "support_used": "0"
+ },
+ "carrier": {
+  "exit": 0,
+  "gcode": "plate_1.gcode",
+  "warnings": [],
+  "time": "10m 22s",
+  "grams": "1.97",
+  "layers": "43",
+  "filament_type": "PETG",
+  "support_used": "0"
+ }
+}

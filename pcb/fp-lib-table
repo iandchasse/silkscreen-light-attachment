@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "silkscreen-light-attachment")(type "KiCad")(uri "${KIPRJMOD}/lib/silkscreen-light-attachment.pretty")(options "")(descr "Light attachment footprints (generated)"))
+)

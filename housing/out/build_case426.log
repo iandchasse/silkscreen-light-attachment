@@ -1,0 +1,13 @@
+[   5.3s] solids geometry.json rev B (2026-09-25) lid top 120.5
+[  11.3s] exported
+[  13.7s] manifolds
+[  14.0s] seated True
+[  14.6s] fit True
+[  19.4s] light True
+[  20.7s] pcba stl True
+[  21.1s] screws True
+[  22.8s] keepout True
+[  29.3s] sweep True
+[ 239.9s] print True
+[ 245.8s] renders
+[ 245.8s] PASS {'seated': True, 'fit': True, 'pins': True, 'light': True, 'pcba_stl': True, 'screws': True, 'keepout': True, 'sweep': True, 'print': True}

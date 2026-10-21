@@ -1,0 +1,2431 @@
+{
+ "meta": {
+  "contract": "design/DESIGN-SPEC.md sec 4",
+  "pcba_source": "pcb/build/geometry.json (pcb/tools/export_geometry.py, 2026-09-25)",
+  "pcba_notes": [
+   "used from file: outline (102 pts), 9 NPTH holes, 15 body boxes, 3 header pins"
+  ],
+  "pcba_compare": {
+   "source": "pcb/build/geometry.json (pcb/tools/export_geometry.py, 2026-09-25)",
+   "pins": {
+    "5": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "6": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "11": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "holes_file": [
+    [
+     5.0,
+     0.5,
+     4.2
+    ],
+    [
+     47.0,
+     2.35,
+     4.2
+    ],
+    [
+     60.9,
+     -2.54,
+     4.2
+    ],
+    [
+     -2.4,
+     16.0,
+     1.6
+    ],
+    [
+     62.4,
+     16.0,
+     1.6
+    ],
+    [
+     15.0,
+     13.1,
+     1.6
+    ],
+    [
+     45.0,
+     13.1,
+     1.6
+    ],
+    [
+     15.0,
+     18.3,
+     1.6
+    ],
+    [
+     45.0,
+     18.3,
+     1.6
+    ]
+   ],
+   "boxes_only_in_file": [],
+   "boxes_moved": {
+    "D11": [
+     -5.3,
+     -5.3,
+     0.05,
+     0.05,
+     0.02
+    ],
+    "D12": [
+     -0.3,
+     -0.3,
+     -3.55,
+     -3.55,
+     0.02
+    ],
+    "R1": [
+     -0.125,
+     -0.875,
+     3.475,
+     4.225,
+     -0.0
+    ],
+    "R2": [
+     4.875,
+     4.125,
+     -0.125,
+     0.625,
+     -0.0
+    ]
+   },
+   "outline_bbox_file": [
+    -4.2,
+    64.2,
+    -6.2,
+    19.6
+   ]
+  },
+  "stock_params": {
+   "X0": {
+    "stock": -4.09,
+    "housing": -4.09,
+    "ok": true
+   },
+   "X1": {
+    "stock": 64.09,
+    "housing": 64.09,
+    "ok": true
+   },
+   "Y1": {
+    "stock": 115.6,
+    "housing": 115.6,
+    "ok": true
+   },
+   "Z_FRONT": {
+    "stock": 6.0,
+    "housing": 6.0,
+    "ok": true
+   },
+   "Z_BACK": {
+    "stock": -6.7,
+    "housing": -6.7,
+    "ok": true
+   },
+   "CORNER_R": {
+    "stock": 5.0,
+    "housing": 5.0,
+    "ok": true
+   },
+   "FRONT_EDGE_R": {
+    "stock": 1.8,
+    "housing": 1.8,
+    "ok": true
+   },
+   "BACK_EDGE_R": {
+    "stock": 2.0,
+    "housing": 2.0,
+    "ok": true
+   }
+  },
+  "cradle": {
+   "bore_d": 4.15,
+   "bore_centre_y": 113.835,
+   "crown_y": 115.91,
+   "rod_axis_on_crown_y": 113.91,
+   "lip": {
+    "t": 0.8,
+    "slot": 0.4,
+    "root_deg_above_equator": 56.0,
+    "hook_deg_below_equator": [
+     4.0,
+     12.0
+    ],
+    "hook_radius_about_axis": 1.84,
+    "interference_radial": 0.16,
+    "x_length": 1.4,
+    "tip_deg": 22.0,
+    "tip_chord": 4.1
+   },
+   "snap_chord_at_hook": 3.6,
+   "snap_deflection_each_lip": 0.2,
+   "radial_play_at_equator": 0.075,
+   "axial_play_each_end": 0.2,
+   "end_wall_behind_socket": 1.0,
+   "dowel": {
+    "d": 1.5,
+    "L": 4.0,
+    "hole_d": 1.55,
+    "hole_depth": 2.4
+   },
+   "dowel_hole_floor_over_crown": 0.3
+  },
+  "pcba_E_stl_crosscheck": {
+   "present": true,
+   "file": "pcb/production/3d/silkscreen-light-attachment_pcba_E.stl",
+   "bbox": [
+    [
+     -4.2,
+     107.94,
+     -6.2
+    ],
+    [
+     64.2,
+     121.4,
+     19.6
+    ]
+   ],
+   "lowest_y (pin tips, expect 107.94)": 107.94,
+   "highest_y (tail tips, expect 121.40)": 121.4,
+   "bodies": 49,
+   "part_bodies_min_gap_clip": 0.7,
+   "part_bodies_min_gap_cover": 0.696,
+   "tips_match": true,
+   "note": "seated nominal; the STEP board slab is drawn 118.695..120.205 (pcb/PROGRESS.md note 2), so the fit checks use geometry.json (118.61..120.21); this is a cross-check only",
+   "bodies_detail": [
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       -0.4,
+       117.91,
+       15.3
+      ],
+      [
+       2.6,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       -0.14,
+       117.92,
+       15.45
+      ],
+      [
+       2.34,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       0.92,
+       118.56,
+       15.6
+      ],
+      [
+       2.6,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       -0.4,
+       118.56,
+       15.6
+      ],
+      [
+       0.38,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       31.9,
+       118.16,
+       1.05
+      ],
+      [
+       33.1,
+       118.61,
+       3.05
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 1.15,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       3.4,
+       117.91,
+       15.3
+      ],
+      [
+       6.4,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       3.66,
+       117.92,
+       15.45
+      ],
+      [
+       6.14,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       4.72,
+       118.56,
+       15.6
+      ],
+      [
+       6.4,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       3.4,
+       118.56,
+       15.6
+      ],
+      [
+       4.18,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       57.4,
+       117.91,
+       15.3
+      ],
+      [
+       60.4,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       57.66,
+       117.92,
+       15.45
+      ],
+      [
+       60.14,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       58.72,
+       118.56,
+       15.6
+      ],
+      [
+       60.4,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       57.4,
+       118.56,
+       15.6
+      ],
+      [
+       58.18,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       16.9,
+       117.91,
+       15.3
+      ],
+      [
+       19.9,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       17.16,
+       117.92,
+       15.45
+      ],
+      [
+       19.64,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       18.22,
+       118.56,
+       15.6
+      ],
+      [
+       19.9,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       16.9,
+       118.56,
+       15.6
+      ],
+      [
+       17.68,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       13.1,
+       117.91,
+       15.3
+      ],
+      [
+       16.1,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       13.36,
+       117.92,
+       15.45
+      ],
+      [
+       15.84,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       14.42,
+       118.56,
+       15.6
+      ],
+      [
+       16.1,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       13.1,
+       118.56,
+       15.6
+      ],
+      [
+       13.88,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       36.9,
+       118.16,
+       1.05
+      ],
+      [
+       38.1,
+       118.61,
+       3.05
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 1.15,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       36.0,
+       117.41,
+       -3.0
+      ],
+      [
+       39.0,
+       118.61,
+       -0.5
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 1.201,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       53.6,
+       117.91,
+       15.3
+      ],
+      [
+       56.6,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       53.86,
+       117.92,
+       15.45
+      ],
+      [
+       56.34,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       54.92,
+       118.56,
+       15.6
+      ],
+      [
+       56.6,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       53.6,
+       118.56,
+       15.6
+      ],
+      [
+       54.38,
+       118.61,
+       16.4
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       31.0,
+       117.41,
+       -3.0
+      ],
+      [
+       34.0,
+       118.61,
+       -0.5
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 1.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       26.6,
+       117.91,
+       15.3
+      ],
+      [
+       29.6,
+       118.61,
+       16.7
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    },
+    {
+     "kind": "part",
+     "bbox": [
+      [
+       26.86,
+       117.92,
+       15.45
+      ],
+      [
+       29.34,
+       118.31,
+       16.55
+      ]
+     ],
+     "watertight": true,
+     "gap_clip": 2.0,
+     "gap_cover": 2.0
+    }
+   ]
+  }
+ },
+ "checks": {
+  "1_seated_vs_case": {
+   "pass": true,
+   "features": {
+    "clip.back_rail": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.front_rail": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.left_block": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.right_block": {
+     "gap": 0.403,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.P1": {
+     "gap": 0.0,
+     "interference_mm3": 0.0,
+     "kind": "datum contact",
+     "pass": true
+    },
+    "clip.P1_block": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.P2": {
+     "gap": 0.0,
+     "interference_mm3": 0.0,
+     "kind": "datum contact",
+     "pass": true
+    },
+    "clip.P2_block": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.P3": {
+     "gap": 0.0,
+     "interference_mm3": 0.0,
+     "kind": "datum contact",
+     "pass": true
+    },
+    "clip.P3_block": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.boss_bridge": {
+     "gap": 0.4,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "clip.boss": {
+     "gap": 0.315,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true,
+     "design_gap": 0.315
+    },
+    "clip.lip": {
+     "gap": 0.0,
+     "interference_mm3": 0.0,
+     "kind": "datum contact",
+     "pass": true
+    },
+    "clip.back_finger_L": {
+     "gap": 0.15,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true,
+     "design_gap": 0.15
+    },
+    "clip.back_bump_L": {
+     "gap": 0.0,
+     "interference_mm3": 1.219,
+     "kind": "spring bump (designed interference)",
+     "depth": 0.3,
+     "design_depth": 0.3,
+     "pass": true
+    },
+    "clip.back_finger_R": {
+     "gap": 0.15,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true,
+     "design_gap": 0.15
+    },
+    "clip.back_bump_R": {
+     "gap": 0.0,
+     "interference_mm3": 1.219,
+     "kind": "spring bump (designed interference)",
+     "depth": 0.3,
+     "design_depth": 0.3,
+     "pass": true
+    },
+    "clip.leaf": {
+     "gap": 0.15,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true,
+     "design_gap": 0.15
+    },
+    "clip.leaf_bump": {
+     "gap": 0.0,
+     "interference_mm3": 0.9699,
+     "kind": "spring bump (designed interference)",
+     "depth": 0.4,
+     "design_depth": 0.4,
+     "pass": true
+    },
+    "clip.corner_finger_L": {
+     "gap": 0.096,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true,
+     "design_gap": 0.1
+    },
+    "clip.corner_finger_R": {
+     "gap": 0.096,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true,
+     "design_gap": 0.1
+    },
+    "clip.ear": {
+     "gap": 0.0,
+     "interference_mm3": 0.0,
+     "kind": "datum contact",
+     "pass": true
+    },
+    "cover.roof": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.back_wall": {
+     "gap": 3.392,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.left_wall": {
+     "gap": 4.436,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.right_wall": {
+     "gap": 4.436,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.left_end_wall": {
+     "gap": 5.735,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.right_end_wall": {
+     "gap": 5.735,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.skirt": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.column_C0": {
+     "gap": 2.8,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.col_boss_C0": {
+     "gap": 5.06,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.column_C1": {
+     "gap": 2.8,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.col_boss_C1": {
+     "gap": 5.06,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.column_C2": {
+     "gap": 2.802,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.col_boss_C2": {
+     "gap": 5.06,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tail_pad": {
+     "gap": 5.8,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.grip_L": {
+     "gap": 5.986,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.grip_R": {
+     "gap": 5.986,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_left": {
+     "gap": 4.749,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_bump_left": {
+     "gap": 4.7,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_right": {
+     "gap": 4.749,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_bump_right": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_back": {
+     "gap": 3.789,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_bump_back": {
+     "gap": 3.756,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_front": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "cover.tongue_bump_front": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.board": {
+     "gap": 3.01,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D1": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D2": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D3": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D4": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D5": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D6": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D7": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D8": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D9": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D10": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D11": {
+     "gap": 1.89,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.D12": {
+     "gap": 1.89,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.R1": {
+     "gap": 2.41,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.R2": {
+     "gap": 2.41,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.J1_body": {
+     "gap": 0.517,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "pcba.pin_5": {
+     "gap": 1.285,
+     "interference_mm3": 0.0,
+     "kind": "pin in the J6 opening",
+     "pass": true
+    },
+    "pcba.pin_6": {
+     "gap": 1.285,
+     "interference_mm3": 0.0,
+     "kind": "pin in the J6 opening",
+     "pass": true
+    },
+    "pcba.pin_11": {
+     "gap": 1.165,
+     "interference_mm3": 0.0,
+     "kind": "pin in the J6 opening",
+     "pass": true
+    },
+    "carrier.mz_wall": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.pz_wall": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.end_wall_L": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.end_wall_R": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.flange_m": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.flange_p": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.lip_L_mz": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.lip_L_pz": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.lip_R_mz": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.lip_R_pz": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.dowel_0": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "carrier.dowel_1": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    },
+    "rod": {
+     "gap": 6.0,
+     "interference_mm3": 0.0,
+     "kind": "clearance",
+     "pass": true
+    }
+   },
+   "part_interference_mm3": {
+    "clip": 3.408,
+    "cover": 0.0,
+    "carrier": 0.0,
+    "rod": 0.0
+   },
+   "note": "datum = P1/P2/P3 on the top face, lip on the front face, ear on the right side; springs = back-finger bumps (0.30) and the left-leaf bump (0.40). Every other feature must clear (gap reported)."
+  },
+  "2_insertion_sweep": {
+   "pass": true,
+   "heights": [
+    15.0,
+    0.0
+   ],
+   "step": 0.25,
+   "collisions": [],
+   "n_collisions": 0,
+   "designed_spring_contacts": 103,
+   "engagement_order": [
+    {
+     "h": 10.266,
+     "event": "back_finger_R engages (gap <= 0.2)"
+    },
+    {
+     "h": 10.265,
+     "event": "back_finger_L engages (gap <= 0.2)"
+    },
+    {
+     "h": 9.63,
+     "event": "corner_finger_L.front(Z) engages (gap <= 0.15)"
+    },
+    {
+     "h": 9.63,
+     "event": "corner_finger_R.front(Z) engages (gap <= 0.15)"
+    },
+    {
+     "h": 8.726,
+     "event": "clip.back_bump_R starts riding the case (preload builds)"
+    },
+    {
+     "h": 8.725,
+     "event": "clip.back_bump_L starts riding the case (preload builds)"
+    },
+    {
+     "h": 8.213,
+     "event": "clip.back_bump_L reaches full preload (on the flat face)"
+    },
+    {
+     "h": 8.213,
+     "event": "clip.back_bump_R reaches full preload (on the flat face)"
+    },
+    {
+     "h": 8.099,
+     "event": "clip.leaf_bump starts riding the case (preload builds)"
+    },
+    {
+     "h": 7.87,
+     "event": "pin tips (hanging, 107.73) cross the top-face plane"
+    },
+    {
+     "h": 7.662,
+     "event": "leaf engages (gap <= 0.2)"
+    },
+    {
+     "h": 7.31,
+     "event": "corner_finger_L.side(X) engages (gap <= 0.15)"
+    },
+    {
+     "h": 7.31,
+     "event": "corner_finger_R.side(X) engages (gap <= 0.15)"
+    },
+    {
+     "h": 6.913,
+     "event": "clip.leaf_bump reaches full preload (on the flat face)"
+    },
+    {
+     "h": 5.42,
+     "event": "pin tips reach the J6 face y 113.15 (enclosure model)"
+    },
+    {
+     "h": 5.2,
+     "event": "pin tips reach the J6 face y 112.93 (B.Fab)"
+    },
+    {
+     "h": 5.09,
+     "event": "pin tips reach the J6 face y 112.82 (STEP-internal)"
+    },
+    {
+     "h": 4.89,
+     "event": "pin tips reach the J6 face y 112.62 (STEP, main board 0.20 down (INFERRED))"
+    },
+    {
+     "h": 3.599,
+     "event": "lip engages (gap <= 0.02)"
+    },
+    {
+     "h": 3.235,
+     "event": "ear engages (gap <= 0.02)"
+    },
+    {
+     "h": 1.4,
+     "event": "J6 boss enters the opening"
+    },
+    {
+     "h": 0.02,
+     "event": "P1 engages (gap <= 0.02)"
+    },
+    {
+     "h": 0.02,
+     "event": "P2 engages (gap <= 0.02)"
+    },
+    {
+     "h": 0.02,
+     "event": "P3 engages (gap <= 0.02)"
+    },
+    {
+     "h": 0.0,
+     "event": "P1/P2/P3 land on the top face; tips at y 107.94"
+    }
+   ],
+   "pin_min_gap_to_case_during_sweep": 1.165,
+   "boss_min_gap_to_case_during_sweep": 0.315,
+   "guided_before_J6": {
+    "X_guide_h": 7.31,
+    "Z_guide_h": 10.266,
+    "pins_touch_J6_h(model face)": 5.42
+   },
+   "m_spec_3c_compare": {
+    "pins cross top face": "7.65 (M-spec) / 7.87 (audit m1)",
+    "pins reach J6": "5.21..4.68 (M-spec) / 5.42..4.89 (audit m1)",
+    "X guided": "7.6",
+    "Z guided": "10.8/10.6 (audit: fingers 10.1..7.6, back 10.6)",
+    "right ear": "3.6",
+    "lip": "3.8",
+    "boss": "1.4",
+    "left leaf": "6.1"
+   }
+  },
+  "3_pins_vs_J6": {
+   "pass": true,
+   "tips_seated_y": {
+    "5": 107.94,
+    "6": 107.94,
+    "11": 107.94
+   },
+   "engagement_by_J6_face": {
+    "enclosure model": 5.21,
+    "B.Fab": 4.99,
+    "STEP-internal": 4.88,
+    "STEP, main board 0.20 down (INFERRED)": 4.68
+   },
+   "window": [
+    3.68,
+    6.0
+   ],
+   "pin_wall_clearance": {
+    "nominal": 1.165,
+    "centred_+-0.05": 1.115,
+    "full_float_+-0.30 (info; J6 lead-in centres the pins)": 0.865,
+    "required": 1.0
+   },
+   "nearest_metal_to_J6-12": 2.54,
+   "J6_model": {
+    "bbox_y": [
+     100.31,
+     113.15
+    ],
+    "entries": {
+     "5": {
+      "entry_open_depth": 8.05,
+      "entry_width_x": 1.04,
+      "entry_width_z": 1.04,
+      "pin_vs_J6_model_mm3": 1.7358,
+      "engagement_model_face": 5.21
+     },
+     "6": {
+      "entry_open_depth": 8.05,
+      "entry_width_x": 1.04,
+      "entry_width_z": 1.04,
+      "pin_vs_J6_model_mm3": 1.7358,
+      "engagement_model_face": 5.21
+     },
+     "11": {
+      "entry_open_depth": 1.3,
+      "entry_width_x": 1.04,
+      "entry_width_z": 1.04,
+      "pin_vs_J6_model_mm3": 1.7358,
+      "engagement_model_face": 5.21
+     }
+    }
+   }
+  },
+  "4_optics_keepout": {
+   "pass": true,
+   "parts": {
+    "clip": {
+     "intrusion_mm3": 0.0,
+     "min_gap": 0.1
+    },
+    "cover": {
+     "intrusion_mm3": 0.0,
+     "min_gap": 2.25
+    },
+    "carrier": {
+     "intrusion_mm3": 0.0,
+     "min_gap": 0.0
+    }
+   },
+   "min_gap_with_engine_float": {
+    "clip": 0.1,
+    "cover": 1.95
+   },
+   "lip_bottom_vs_y_ko": {
+    "z 6.0": 1.236,
+    "z 7.6": 0.665
+   },
+   "rule": "y_ko(z) = 108.05 + 0.357 (z - 4) for z 3.93..13.70, rod lower half, z 18.10; x -1.0..61.0"
+  },
+  "5_float_extremes": {
+   "pass": true,
+   "required": 0.4,
+   "states": "17 X/Z positions (centre + 16 on the 0.30 circle) x seated/resting (0.21 Y)",
+   "carrier_rod_min_gap": 0.443,
+   "pcba_min_gap_excl_designed": 0.4,
+   "violations": [],
+   "n_violations": 0,
+   "bad_designed_contacts": [],
+   "designed_contacts": [
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.back_rail",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.front_rail",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.left_block",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.right_block",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.P1",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.P1_block",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.P2",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.P2_block",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.P3",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.P3_block",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.boss_bridge",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.boss",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.lip",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.back_finger_L",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.back_bump_L",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.back_finger_R",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.back_bump_R",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.leaf",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.leaf_bump",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.corner_finger_L",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.corner_finger_R",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "clip.ear",
+     "why": "PCB rests on the clip top (Y seat)",
+     "min_gap": 1.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.column_C0",
+     "why": "float stop: hole on column",
+     "min_gap": 0.0,
+     "max_pen": 0.065,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.column_C1",
+     "why": "float stop: hole on column",
+     "min_gap": 0.0,
+     "max_pen": 0.065,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.column_C2",
+     "why": "float stop: hole on column",
+     "min_gap": 0.0,
+     "max_pen": 0.123,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_left",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.15,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_bump_left",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.0,
+     "max_pen": 0.45,
+     "max_vol": 0.274
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_right",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.15,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_bump_right",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.0,
+     "max_pen": 0.45,
+     "max_vol": 0.274
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_back",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.15,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_bump_back",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.0,
+     "max_pen": 0.45,
+     "max_vol": 0.274
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_front",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.15,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.tongue_bump_front",
+     "why": "centering tongue (spring)",
+     "min_gap": 0.0,
+     "max_pen": 0.45,
+     "max_vol": 0.274
+    },
+    {
+     "moving": "pcba.pin_5",
+     "fixed": "cover.roof",
+     "why": "roof underside 0.20 above the tail tops, inside the tail-pad footprint",
+     "min_gap": 0.2,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.pin_5",
+     "fixed": "cover.tail_pad",
+     "why": "roof pad pushes the tails (seated)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.pin_6",
+     "fixed": "cover.roof",
+     "why": "roof underside 0.20 above the tail tops, inside the tail-pad footprint",
+     "min_gap": 0.2,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.pin_6",
+     "fixed": "cover.tail_pad",
+     "why": "roof pad pushes the tails (seated)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.pin_11",
+     "fixed": "cover.roof",
+     "why": "roof underside 0.20 above the tail tops, inside the tail-pad footprint",
+     "min_gap": 0.2,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    },
+    {
+     "moving": "pcba.pin_11",
+     "fixed": "cover.tail_pad",
+     "why": "roof pad pushes the tails (seated)",
+     "min_gap": 0.0,
+     "max_pen": 0.0,
+     "max_vol": 0.0
+    }
+   ],
+   "lowest_gaps_below_1mm": [
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip.P3",
+     "min_gap": 0.4
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip.P3_block",
+     "min_gap": 0.4
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip",
+     "min_gap": 0.42
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "cover",
+     "min_gap": 0.428
+    },
+    {
+     "moving": "carrier.pz_wall",
+     "fixed": "cover",
+     "min_gap": 0.443
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.back_wall",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.left_wall",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.right_wall",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.left_end_wall",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.right_end_wall",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.skirt",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.col_boss_C0",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.col_boss_C1",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.board",
+     "fixed": "cover.col_boss_C2",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "carrier.mz_wall",
+     "fixed": "cover",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "carrier.end_wall_L",
+     "fixed": "cover",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "carrier.end_wall_R",
+     "fixed": "cover",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "carrier.flange_m",
+     "fixed": "cover",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "carrier.flange_p",
+     "fixed": "cover",
+     "min_gap": 0.45
+    },
+    {
+     "moving": "pcba.pin_6",
+     "fixed": "cover.col_boss_C2",
+     "min_gap": 0.612
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip.back_rail",
+     "min_gap": 0.728
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip.right_block",
+     "min_gap": 0.728
+    },
+    {
+     "moving": "pcba.D11",
+     "fixed": "clip",
+     "min_gap": 0.75
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip.boss_bridge",
+     "min_gap": 0.792
+    },
+    {
+     "moving": "pcba.J1_body",
+     "fixed": "clip.boss",
+     "min_gap": 0.792
+    }
+   ],
+   "pcba_source": "pcb/build/geometry.json (pcb/tools/export_geometry.py, 2026-09-25)"
+  },
+  "6_printability": {
+   "pass": true,
+   "parts": {
+    "clip": {
+     "overhang_patches_flagged": 0,
+     "overhang_area_flagged_mm2": 0,
+     "overhang_patches_failing": [],
+     "widest_accepted_patch": 0,
+     "thin_wall_min_undeclared": 1.015,
+     "thin_clusters_undeclared": [],
+     "declared_thin": {
+      "C1 pilot dia 1.8 in the 0.4-tall P3 pad (0.75/0.85)": 0.741,
+      "C2 pilot dia 1.8 to the notch face x 59.2 (0.80)": 0.791,
+      "boss / back-rail corner artefact (<= 4 samples)": 0.9
+     },
+     "mesh_watertight": true,
+     "print_height": 15.4,
+     "pass": true
+    },
+    "cover": {
+     "overhang_patches_flagged": 15,
+     "overhang_area_flagged_mm2": 66.69,
+     "overhang_patches_failing": [],
+     "widest_accepted_patch": 0.957,
+     "thin_wall_min_undeclared": 1.0,
+     "thin_clusters_undeclared": [],
+     "declared_thin": {
+      "tongue_left (0.8 spring, audit M5)": 0.5,
+      "tongue_right (0.8 spring, audit M5)": 0.5,
+      "tongue_back (0.8 spring, audit M5)": 0.5,
+      "tongue_front (0.8 spring, audit M5)": 0.5,
+      "column_C0 wall 0.55 (contract 3.6 column, rev A 2.5 bore; 100% infill, drill 2.4)": 0.539,
+      "column_C1 wall 0.55 (contract 3.6 column, rev A 2.5 bore; 100% infill, drill 2.4)": 0.539,
+      "column_C2 wall 0.55 (contract 3.6 column, rev A 2.5 bore; 100% infill, drill 2.4)": 0.439,
+      "engraved arrow + SCREEN ribs (top 0.4 of the roof)": 0.257
+     },
+     "mesh_watertight": true,
+     "print_height": 13.4,
+     "pass": true
+    },
+    "carrier": {
+     "overhang_patches_flagged": 16,
+     "overhang_area_flagged_mm2": 43.83,
+     "overhang_patches_failing": [],
+     "widest_accepted_patch": 0.775,
+     "thin_wall_min_undeclared": 1.0,
+     "thin_clusters_undeclared": [],
+     "declared_thin": {
+      "left cradle end: lip flexures 0.8, outer strip 0.525, dowel hole floor 0.30 over the crown, dowel hole 0.625 to the inner face": 0.291,
+      "right cradle end: lip flexures 0.8, outer strip 0.525, dowel hole floor 0.30 over the crown, dowel hole 0.625 to the inner face": 0.291,
+      "-Z glue-dam rebate (flange 1.0 -> 0.7)": 0.7,
+      "+Z glue-dam rebate (flange 1.0 -> 0.7)": 0.7
+     },
+     "mesh_watertight": true,
+     "print_height": 8.61,
+     "pass": true
+    }
+   },
+   "rule": "overhang > 50.0 deg from vertical flagged; patches wider than 3.0 mm (and > 1 mm2) fail; walls between anti-parallel faces >= 1.0 except declared features"
+  },
+  "8_rod_datum": {
+   "pass": true,
+   "rod_axis_preloaded": {
+    "y": 113.91,
+    "z": [
+     15.8,
+     15.8
+    ]
+   },
+   "target": {
+    "y": 113.91,
+    "z": 15.8,
+    "tol": 0.05
+   },
+   "method": "rod moved +Y along z 15.80 against the carrier minus its lips (the crown body) until first contact (manifold intersection > 1e-5 mm3, 30-step bisection); lip interference = rod radius - exact distance from the rod axis to each lip; z from the L/R interference balance",
+   "lips": {
+    "lip_L_mz": {
+     "interference": 0.16,
+     "contact_deg_below_equator": 11.3,
+     "x": [
+      -2.8,
+      -1.4
+     ]
+    },
+    "lip_L_pz": {
+     "interference": 0.16,
+     "contact_deg_below_equator": 11.3,
+     "x": [
+      -2.8,
+      -1.4
+     ]
+    },
+    "lip_R_mz": {
+     "interference": 0.16,
+     "contact_deg_below_equator": 11.3,
+     "x": [
+      61.4,
+      62.8
+     ]
+    },
+    "lip_R_pz": {
+     "interference": 0.16,
+     "contact_deg_below_equator": 11.3,
+     "x": [
+      61.4,
+      62.8
+     ]
+    }
+   },
+   "led_face_y_min": 117.91,
+   "n_leds": 10,
+   "gap_led_to_rod": 2.0,
+   "dz_led_minus_rod": 0.2,
+   "cradle": {
+    "bore_d": 4.15,
+    "bore_centre_y": 113.835,
+    "crown_y": 115.91,
+    "rod_axis_on_crown_y": 113.91,
+    "lip": {
+     "t": 0.8,
+     "slot": 0.4,
+     "root_deg_above_equator": 56.0,
+     "hook_deg_below_equator": [
+      4.0,
+      12.0
+     ],
+     "hook_radius_about_axis": 1.84,
+     "interference_radial": 0.16,
+     "x_length": 1.4,
+     "tip_deg": 22.0,
+     "tip_chord": 4.1
+    },
+    "snap_chord_at_hook": 3.6,
+    "snap_deflection_each_lip": 0.2,
+    "radial_play_at_equator": 0.075,
+    "axial_play_each_end": 0.2,
+    "end_wall_behind_socket": 1.0,
+    "dowel": {
+     "d": 1.5,
+     "L": 4.0,
+     "hole_d": 1.55,
+     "hole_depth": 2.4
+    },
+    "dowel_hole_floor_over_crown": 0.3
+   },
+   "retained_in_any_orientation": true
+  },
+  "9_tongue_lead_in": {
+   "pass": true,
+   "lead": 0.5,
+   "tongues": {
+    "left": {
+     "full_crest_from_y": 119.55,
+     "bump_bottom_vs_pcb_edge": -0.35,
+     "pcb_top_at_bump_bottom_overlap_mm3": 0.0,
+     "edge_contact_starts_y": 119.4,
+     "seated_full_crest_band": [
+      119.55,
+      120.21
+     ],
+     "resting_full_crest_band": [
+      119.55,
+      120.0
+     ]
+    },
+    "right": {
+     "full_crest_from_y": 119.55,
+     "bump_bottom_vs_pcb_edge": -0.35,
+     "pcb_top_at_bump_bottom_overlap_mm3": 0.0,
+     "edge_contact_starts_y": 119.4,
+     "seated_full_crest_band": [
+      119.55,
+      120.21
+     ],
+     "resting_full_crest_band": [
+      119.55,
+      120.0
+     ]
+    },
+    "back": {
+     "full_crest_from_y": 119.55,
+     "bump_bottom_vs_pcb_edge": -0.35,
+     "pcb_top_at_bump_bottom_overlap_mm3": 0.0,
+     "edge_contact_starts_y": 119.4,
+     "seated_full_crest_band": [
+      119.55,
+      120.21
+     ],
+     "resting_full_crest_band": [
+      119.55,
+      120.0
+     ]
+    },
+    "front": {
+     "full_crest_from_y": 119.55,
+     "bump_bottom_vs_pcb_edge": -0.35,
+     "pcb_top_at_bump_bottom_overlap_mm3": 0.0,
+     "edge_contact_starts_y": 119.4,
+     "seated_full_crest_band": [
+      119.55,
+      120.21
+     ],
+     "resting_full_crest_band": [
+      119.55,
+      120.0
+     ]
+    }
+   },
+   "cover_insertion": {
+    "columns_enter_the_PCB_holes_at_h": 1.6,
+    "bumps_touch_the_PCB_edge_at_h (on the 45-deg flank)": 0.6,
+    "full_crest_reaches_the_PCB_edge_at_h": 0.45
+   },
+   "rule": "full crest from y >= 119.5; bump bottom outside the PCB edge; no overlap with the PCB top 0.02 above the bump bottom; >= 0.4 of full crest on the resting PCB edge"
+  },
+  "7_exports": {
+   "pass": true,
+   "files": {
+    "clip.stl": 155284,
+    "clip.step": 1199853,
+    "cover.stl": 604884,
+    "cover.step": 1139617,
+    "carrier.stl": 183084,
+    "carrier.step": 1459757,
+    "housing-plate.3mf": 187890,
+    "render/assembly_iso.png": 42386,
+    "render/assembly_iso_back.png": 47982,
+    "render/front.png": 15642,
+    "render/section_J6_x55.9.png": 30866,
+    "render/section_rod_x30.png": 31162,
+    "render/section_cradle_x-2.1.png": 38541
+   },
+   "print_orientation": {
+    "clip": "top face y 118.40 on the bed",
+    "cover": "roof top y 123.40 on the bed",
+    "carrier": "flanges (PCB face y 118.61) on the bed"
+   },
+   "watertight": {
+    "clip": true,
+    "cover": true,
+    "carrier": true
+   },
+   "volumes_mm3": {
+    "clip": 3383.2,
+    "cover": 6731.0,
+    "carrier": 1644.1
+   }
+  }
+ },
+ "springs": {
+  "back_finger (each)": {
+   "L": 10.0,
+   "b": 7.6,
+   "t": "1.4->1.0",
+   "deflection_as_built": 0.3,
+   "deflection_range": [
+    0.05,
+    0.55
+   ],
+   "k_N_per_mm": 8.69,
+   "force_N": 2.61,
+   "force_range_N": [
+    0.43,
+    4.78
+   ],
+   "strain_nominal_pct": 0.52,
+   "strain_max_pct": 0.96,
+   "root_stress_MPa": 10.5,
+   "root_fillet": 1.5,
+   "PLA_force_N": 4.56,
+   "m_spec": "rev 0: t 1.2, b 10, k 8.64 N/mm, 2.59 N, strain 0.54 / 0.99 %, root stress 10.8 MPa"
+  },
+  "left_leaf": {
+   "L": 11.5,
+   "b": 3.8,
+   "t": "1.4->1.0",
+   "deflection_as_built": 0.4,
+   "deflection_range": [
+    0.15,
+    0.65
+   ],
+   "k_N_per_mm": 2.77,
+   "force_N": 1.11,
+   "force_range_N": [
+    0.42,
+    1.8
+   ],
+   "strain_nominal_pct": 0.51,
+   "strain_max_pct": 0.83,
+   "root_stress_MPa": 10.3,
+   "root_fillet": 1.5,
+   "PLA_force_N": 1.94,
+   "m_spec": "rev 0: t 1.2, b 5.0, k 2.84 N/mm, 1.14 N, strain 0.54 / 0.88 %, root stress 10.9 MPa"
+  },
+  "cradle_lip (each of 4)": {
+   "L": 2.76,
+   "b": 1.4,
+   "t": 0.8,
+   "deflection_as_built": 0.162,
+   "deflection_range": [
+    0.151,
+    0.2
+   ],
+   "k_N_per_mm": 16.96,
+   "force_N": 2.74,
+   "force_range_N": [
+    2.54,
+    3.39
+   ],
+   "strain_nominal_pct": 2.54,
+   "strain_max_pct": 3.14,
+   "up_force_per_end_frictionless_N": 0.76,
+   "hold_force_per_end_mu0.3_N": 2.39,
+   "rod_weight_N": 0.0097,
+   "m_spec": "curved lip, straight-cantilever estimate over the arc length; max strain is the snap-through (0.2 per lip, chord 3.6); one-time assembly, then epoxy dots"
+  },
+  "tongue_left": {
+   "L_to_bump": 7.25,
+   "height": 4.35,
+   "t": 0.8,
+   "k_N_per_mm": 2.92,
+   "preload_N": 0.438,
+   "full_float_N": 1.315,
+   "strain_full_float_pct": 1.03,
+   "slot_vs_max_deflection": [
+    0.5,
+    0.44999999999999996
+   ],
+   "audit_M5": "k ~0.75 N/mm, 0.11 N preload, 0.34 N full float (1.5-tall floating tongue)"
+  },
+  "tongue_right": {
+   "L_to_bump": 7.25,
+   "height": 4.35,
+   "t": 0.8,
+   "k_N_per_mm": 2.92,
+   "preload_N": 0.438,
+   "full_float_N": 1.315,
+   "strain_full_float_pct": 1.03,
+   "slot_vs_max_deflection": [
+    0.5,
+    0.44999999999999996
+   ],
+   "audit_M5": "k ~0.75 N/mm, 0.11 N preload, 0.34 N full float (1.5-tall floating tongue)"
+  },
+  "tongue_back": {
+   "L_to_bump": 7.25,
+   "height": 4.35,
+   "t": 0.8,
+   "k_N_per_mm": 2.92,
+   "preload_N": 0.438,
+   "full_float_N": 1.315,
+   "strain_full_float_pct": 1.03,
+   "slot_vs_max_deflection": [
+    0.5,
+    0.44999999999999996
+   ],
+   "audit_M5": "k ~0.75 N/mm, 0.11 N preload, 0.34 N full float (1.5-tall floating tongue)"
+  },
+  "tongue_front": {
+   "L_to_bump": 7.25,
+   "height": 4.35,
+   "t": 0.8,
+   "k_N_per_mm": 2.92,
+   "preload_N": 0.438,
+   "full_float_N": 1.315,
+   "strain_full_float_pct": 1.03,
+   "slot_vs_max_deflection": [
+    0.5,
+    0.44999999999999996
+   ],
+   "audit_M5": "k ~0.75 N/mm, 0.11 N preload, 0.34 N full float (1.5-tall floating tongue)"
+  },
+  "retention": {
+   "J6_N": 4.17,
+   "friction_N": 3.8,
+   "total_N": 7.97,
+   "insertion_N_approx": 8.81,
+   "m_spec": "retention ~8 N (5..12), insertion ~10 N"
+  }
+ },
+ "stack": {
+  "screws": {
+   "pass": true,
+   "screw": "ST2.2 x 6.5 pan, plastics thread-forming (DIN 7981 form / PT class)",
+   "L": 6.5,
+   "head_seat_y": 122.4,
+   "pilot_d": 1.8,
+   "column_bore": 2.5,
+   "columns": {
+    "C0": {
+     "x": 5.0,
+     "z": 0.5,
+     "pilot_bottom_y": 115.6,
+     "tip_y": 115.9,
+     "tip_above_case_top": 0.3,
+     "engaged": 2.5,
+     "tip_vs_clip_underside": 0.3
+    },
+    "C1": {
+     "x": 47.0,
+     "z": 2.35,
+     "pilot_bottom_y": 115.6,
+     "tip_y": 115.9,
+     "tip_above_case_top": 0.3,
+     "engaged": 2.5,
+     "tip_vs_clip_underside": 0.3
+    },
+    "C2": {
+     "x": 60.9,
+     "z": -2.54,
+     "pilot_bottom_y": 116.0,
+     "tip_y": 115.9,
+     "tip_above_case_top": 0.3,
+     "engaged": 2.4,
+     "tip_vs_clip_underside": -0.1
+    }
+   },
+   "walls": {
+    "C2 pilot to the header-notch face x 59.20": 0.8,
+    "C2 after thread forming (major 2.2)": 0.6,
+    "C1 pilot in the P3 pad layer (z)": [
+     0.75,
+     0.85
+    ],
+    "cover column wall": 0.55,
+    "screw radial clearance in the column bore": 0.15
+   },
+   "header_notch_clearance": {
+    "J1 body x1": 58.472,
+    "notch face x": 59.2,
+    "nominal": 0.728,
+    "full float": 0.428
+   },
+   "rule": "tip >= 0.3 above the case top at every column, engaged >= 2.4, J1 body >= 0.4 from the notch face at full float"
+  },
+  "pad_face_y": 115.6,
+  "clip_top_y": 118.4,
+  "column_seat_y": 118.399,
+  "tail_pad_y": 121.4,
+  "clip_pad_to_top": 2.8,
+  "cover_seat_to_pad": 3.001,
+  "tip_seated_y": 107.94,
+  "tip_off_case_y": 107.73,
+  "pcb_underside_seated": 118.61,
+  "engagement_nominal": {
+   "enclosure model": 5.21,
+   "B.Fab": 4.99,
+   "STEP-internal": 4.88,
+   "STEP, main board 0.20 down (INFERRED)": 4.68
+  },
+  "engagement_worst": [
+   4.03,
+   5.64
+  ],
+  "margins": [
+   0.35,
+   0.36
+  ],
+  "rss_tol": 0.217,
+  "m_spec_2d": "tip 107.94; E 4.68..5.21 nominal, 4.03..5.64 worst (limits 3.68/6.00)",
+  "pass": true
+ },
+ "slice": {
+  "presets": {
+   "machine": "Elegoo Centauri Carbon 2 0.4 nozzle",
+   "process": "0.20mm Standard @Elegoo CC2 0.4 nozzle",
+   "filament": "Elegoo PETG @ECC2"
+  },
+  "overrides": {
+   "process": {
+    "wall_loops": "3",
+    "sparse_infill_density": "30%",
+    "enable_support": "0"
+   }
+  },
+  "clip": {
+   "exit": 0,
+   "gcode": "plate_1.gcode",
+   "warnings": [],
+   "time": "21m 3s",
+   "grams": "3.95",
+   "layers": "77",
+   "filament_type": "PETG",
+   "support_used": "0"
+  },
+  "cover": {
+   "exit": 0,
+   "gcode": "plate_1.gcode",
+   "warnings": [],
+   "time": "24m 24s",
+   "grams": "7.98",
+   "layers": "67",
+   "filament_type": "PETG",
+   "support_used": "0"
+  },
+  "carrier": {
+   "exit": 0,
+   "gcode": "plate_1.gcode",
+   "warnings": [],
+   "time": "10m 22s",
+   "grams": "1.97",
+   "layers": "43",
+   "filament_type": "PETG",
+   "support_used": "0"
+  }
+ },
+ "pass": true,
+ "deviations": [
+  "Centering tongues: full-height flexures (y 119.05..123.40, cut through the roof with U-slits) instead of 1.5-tall tongues floating mid-wall centred on y 119.4. A mid-wall horizontal cantilever is an 8 mm unsupported overhang when the cover prints roof-down. As built k = 2.92 N/mm (audit 0.75): 0.44 N at the 0.15 preload and 1.32 N at full float. Three pins give about 26 N/mm laterally, so they bend about 0.05 mm. Contact band y 119.05..121.60 covers the PCB edge both seated (118.61..120.21) and resting (118.40..120.00).",
+  "Tongue face set 0.45 behind the PCB edge with a 0.60 bump (0.15 preload), so the rigid tongue root never touches the PCB at full float (0.15 clear). The contract says \"0.15 bump\"; read here as the 0.15 preload. The tongue bottom is at 119.05, not 118.65, so the front tongue keeps 0.44 from the seated carrier flange (>= 0.40).",
+  "Rod-carrier pins: printed pins cannot exist on a part printed flanges-down, because they would point into the bed. The two datum pins are steel dowels, \u00d81.5 x 4 (ISO 8734, a stocked length), set in 5-minute epoxy in \u00d81.55 x 2.4 slip holes, so they sit flush with the PCB top (no stake heads, roof clearance 1.39). Rev A: was \u00d81.5 x 3 pressed into \u00d81.45 x 1.5 (review MINOR-5: 7 % hoop strain in a 0.675 wall). The hole floor over the cradle crown is 0.30 (declared). The 4 stake holes are adhesive points: epoxy through the \u00d81.6 PCB holes onto the flanges, now at z 13.10 / 18.30, with 0.3 x 0.3 glue-dam rebates along both flange inner edges. Heat-staking is dropped.",
+  "C-cradle mouth faces -Y (away from the PCB), not +Y. The datum hole (-2.40, 16.00) sits directly above the rod end (x -3.0..-1.0), so the material above the rod must be solid to carry the dowel. Rev A (review MAJOR-1): the rod datums on the bore crown. Bore \u00d84.15 centred at y 113.835, so the crown (115.91) puts the rod axis at 113.91, 2.00 below the LED faces. Below the equator each side is a curved lip flexure, 0.8 thick, rooted 56 deg above the equator behind a 0.4 slot, free 0.4 from both socket faces (1.4 long in x). Its hook (radius 1.84 about the rod axis, 4..12 deg below the equator) gives 0.16 interference and preloads the rod up onto the crown in any orientation. Snap-through 0.20 per lip (chord 3.60). The end walls widen to z 12.00..19.60 to make room (0.45 from the cover at full float).",
+  "Socket depth 2.2 (contract 2.0): 0.20 axial play per end for a hand-cut 66.0 rod, and the end wall behind the socket stays 1.0. Rod-end faces stay at x -3.0 / 63.0 nominal.",
+  "Contract-forced thin walls, declared: the C1 pilot (\u00d81.8) inside the 0.4-tall P3 pad leaves 0.75 / 0.85 (C1 at z 2.35, P3 z 0.7..4.1). The C2 pilot (x 60.90) leaves 0.80 to the header-notch face, moved 59.3 -> 59.2 (J1 body keeps 0.43 at full float). The dowel hole (\u00d81.55) at x -2.40 leaves 0.625 to the end-wall inner face and a 0.30 floor over the cradle crown. The cradle lips are 0.8, the outer strip beside each slot 0.525. The glue-dam rebates leave 0.7 of the 1.0 flange. The engraved-text ribs are cosmetic, in the top 0.4 of a 1.8 roof.",
+  "P3 pad z0 0.6 -> 0.7 and back-rail notch z -5.70 -> -5.80. The header body keeps 0.40 from the clip at full float (M-spec gave 0.30 / 0.32).",
+  "Left leaf b 6.0 (z -2.5..3.5) -> 5.0 (z -3.0..2.0), and the left corner-finger side part z 2.0 -> 2.5..4.2. The M-spec leaf and finger side part overlap at z 2.0..3.5 on the same x; they are now 0.5 apart. Leaf k 2.84 N/mm, 1.14 N at 0.40 (M-spec 3.4 / 1.4). Rev A MINOR-7 narrowed it again to b 3.8 (z -2.4..1.4) with the 1.4 -> 1.0 taper.",
+  "Roof underside 121.60 (1.8 roof). The tail pad is 0.20 proud at 121.40 (the stack datum) over x 52.9..59.0, z -5.6..0.5. Column bosses \u00d85.2 run down to y 120.66 (0.45 above the seated PCB top) under the \u00d84.4 x 1.0 counterbores. The contract columns are \u00d83.6; rev A opens the bore 2.3 -> 2.5 (review MAJOR-3), so the wall is 0.55, declared thin (100 % infill, drill 2.4 through). Screws: ST2.2 x 6.5 pan, DIN 7981 form / PT-class plastics thread-former; head seat 122.40, tip 115.90 (0.30 above the case top), 2.5 engaged at C0/C1 and 2.4 at C2.",
+  "Cover walls sit 0.75 off the PCB edges (0.45 at full float), and the back-region walls are 2.0 thick so 1.0 remains behind the tongue slots. Skirt inner face at z 20.35 (contract >= 20.30), 2.0 thick. The front-region end walls sit at x -4.95 / 64.95. Rev A (review MAJOR-4): 3 grip ribs on each end face (x -6.25 / 66.25, z -6.5..1.5, centred over the posts, 0.5 proud, flat underside + 45-deg top flank) and a 0.6-deep fingernail ledge in the back wall (y 120.4..121.4, x 3..18 and 30..57). Envelope x -6.75..66.75, y 103.0..123.40, z -8.95..22.35 (M-spec -8.05..21.0).",
+  "Clip pilots \u00d81.8 (rev A, was 1.6) are through holes. Blind holes would leave 0.4-0.8 floors under P1/P3, below the 1.0 minimum wall.",
+  "Corner fingers are 1.5 thick (M-spec 1.6; its printability table allows 1.5-1.6). Rev A: the back-finger and leaf bump crests are R0.3 rounds whose top keeps the 0.30 / 0.40 interference exact; the lip bottom inner edge is R0.5 (was a 0.3 chamfer); the back fingers and leaf taper 1.4 -> 1.0 with R1.5 root fillets, narrowed to b 7.6 / 3.8 so k stays at 8.7 / 2.8 N/mm; the back-rail outer face moves -8.05 -> -8.25 to meet the 1.4 finger roots. The tongue bumps get a 45-deg 0.50 lead-in (full crest from 119.55). The orientation arrow and \"SCREEN\" are engraved 0.4 deep, because the roof top is the print bed. The 0.2 elephant-foot chamfers are left to the slicer."
+ ]
+}
