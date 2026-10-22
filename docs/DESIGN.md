@@ -1,6 +1,6 @@
 # Design rationale (rev B)
 
-The short "why" behind rev B. The contract is [design/DESIGN-SPEC-revB.md](../design/DESIGN-SPEC-revB.md). Numbers come from [pcb/docs/design_summary.md](../pcb/docs/design_summary.md) and [housing/out/REPORT.md](../housing/out/REPORT.md). Status: designed and CAD-checked, **not built or tested**.
+The short "why" behind rev B. The contract is [design/DESIGN-SPEC-revB.md](../design/DESIGN-SPEC-revB.md). Numbers come from [pcb/docs/design_summary.md](../pcb/docs/design_summary.md) and [housing/out/REPORT.md](../housing/out/REPORT.md). Status: the rev B board and the rev B housing are built and work; the rev C housing is checked in CAD only and has not been printed (see the [README](../README.md)).
 
 Coordinates are in the case frame, in mm: X along the top edge, Y up the device (the top face of the case is y 115.60), Z toward the reader (0 = the main board's rear face).
 
@@ -75,4 +75,4 @@ Page brightness relative to the page middle (tools/optics_sim.py):
 6. **Header pin size** 0.64 mm square is assumed; the part listing does not give it.
 7. **No reverse-protection diodes:** never plug the bare board in.
 8. **TPS923611 main boards:** small hot-plug margin; light off first, always.
-9. **Not built or tested.**
+9. **Rev C housing not printed.** The rev B board and housing are built and work; the rev C housing is checked in CAD only.

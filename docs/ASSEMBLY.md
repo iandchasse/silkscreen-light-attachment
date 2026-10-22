@@ -1,6 +1,6 @@
 # Assembly (rev B)
 
-Rev B is designed and CAD-checked but **not built or tested**. If a step does not work as written, stop and note what happened.
+The rev B board and the rev B housing are built and work; the rev C housing (enclosing hood, rounder brow, rabbeted seam) is checked in CAD only and has not been printed (see the [README](../README.md)). If a step does not work as written, stop and note what happened.
 
 You need: the assembled board, the two pin headers (1 × 2 and 1 × 1; `J1` and `J2` in the BOM), a spare 2.54 mm 2-row female header as a jig, the printed base and lid, 2 × M2 × 3 pan-head screws, a soldering iron and a small screwdriver. Parts list: [ORDERING](ORDERING.md).
 

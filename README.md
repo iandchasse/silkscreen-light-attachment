@@ -16,7 +16,7 @@
 - Two printed parts (base + lid) and two M2 screws hold the board. No glue, no optics parts, nothing to modify.
 - The reader's normal frontlight controls (brightness and warmth) drive it. It is meant for a reader with nothing in the main board's frontlight connector (no panel frontlight and no light strip).
 
-> **Status (2026-10-21): the rev B board and the rev B housing are built and work.** Pins line up with the header, the cap fits the 4.26" case and snaps on, and the light works. **The rev C housing (enclosing hood, rounder brow, rabbeted seam) is checked in CAD only and has not been printed yet.** The board is unchanged (rev B). The rev B prints are in `archive/rev-B-housing/print/`.
+> **Status (2026-10-21): the rev B board and the rev B housing are built and work.** Pins line up with the expansion header, the cap fits the 4.26" case and snaps on, and the light works. **The rev C housing (enclosing hood, rounder brow, rabbeted seam) is checked in CAD only and has not been printed yet.** The board is unchanged (rev B). The rev B prints are in `archive/rev-B-housing/print/`.
 >
 > Cheapest first step: print the two parts (about 36 min, 8.6 g; rev C, with the enclosing hood) and try the empty base on your case. It has no metal, so that is safe.
 
@@ -24,7 +24,7 @@
 |:---:|:---:|:---:|
 | ![Cap on the case](housing/out/render/assembly_iso.png) | ![Base, board, lid](housing/out/render/exploded_iso.png) | ![PCBA, LED side](pcb/docs/images/render_top.png) |
 
-More renders: [front](housing/out/render/front.png), [right side](housing/out/render/side_right.png), [section through the header](housing/out/render/section_J6_x54.66.png), [section through an LED](housing/out/render/section_led_x28.1.png), [section through a screw boss](housing/out/render/section_boss_x10.png), [board top side](pcb/docs/images/render_bottom.png).
+More renders: [front](housing/out/render/front.png), [right side](housing/out/render/side_right.png), [section through the expansion header](housing/out/render/section_J6_x54.66.png), [section through an LED](housing/out/render/section_led_x28.1.png), [section through a screw boss](housing/out/render/section_boss_x10.png), [board top side](pcb/docs/images/render_bottom.png).
 
 ## What you need
 
@@ -52,9 +52,9 @@ Full steps: [ASSEMBLY](docs/ASSEMBLY.md).
 ## Safety in short
 
 - **Frontlight off (brightness 0) before you plug it in or pull it off.** If the light was on with nothing attached, wait about 10 s.
-- **Only the header's pins 5, 6 and 11 are used.** Every other position has no pin, pad or copper on the board, so the ground pin (4) and the raw battery pin (12) are never touched.
-- **The cap keys the plug.** The case opening is off-centre, and the cap's walls line the pins up before they reach the header. Turned round, the pins land on the solid top of the case.
-- **Never plug the bare board into the header.** Rev B has no reverse-protection diodes. The main board is safe either way, but a wrongly placed bare board can put a reverse voltage across the LEDs and damage them.
+- **Only the expansion header's pins 5, 6 and 11 are used.** Every other position has no pin, pad or copper on the board, so the ground pin (4) and the raw battery pin (12) are never touched.
+- **The cap keys the plug.** The case opening is off-centre, and the cap's walls line the pins up before they reach the expansion header. Turned round, the pins land on the solid top of the case.
+- **Never plug the bare board into the expansion header.** Rev B has no reverse-protection diodes. The main board is safe either way, but a wrongly placed bare board can put a reverse voltage across the LEDs and damage them.
 - **TPS923611 main boards** have a smaller hot-plug margin, so the light-off rule matters most there.
 
 Details and the bench test: [SAFETY-AND-TEST](docs/SAFETY-AND-TEST.md).

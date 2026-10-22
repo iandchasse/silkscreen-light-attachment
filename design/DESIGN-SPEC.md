@@ -3,6 +3,9 @@
 
 # Silkscreen light attachment: design spec (implementation contract)
 
+Main-board parts named here: J6 is the main board's expansion header (the 2x6 socket on its top edge). J1 is the light's
+own pin header, D1-D10 its LEDs and R1/R2 its resistors.
+
 Status: frozen for rev A implementation, 2026-09-25. This file is the single source of truth. Where it disagrees with
 another design file, this file wins. Details it does not repeat come from:
 - `design/mechanical-spec.md` (M-spec): clip and cover geometry, stack, springs, printing.

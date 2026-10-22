@@ -1,8 +1,9 @@
 # Electrical review (independent) - COMPLETE
 
 Main-board parts named here: J6 is the expansion header; U10 the frontlight driver; Q5/Q6 the warm/cool string switches;
-R37 the current-set resistor; D3/D8 the frontlight clamps; C9 the driver's output capacitor. J1 is the light's own pin
-header, D1-D12 its LEDs and diodes, R1/R2 its resistors.
+R37 the current-set resistor; C9 the driver's output capacitor; D3 and D8 only in the sections that describe the main
+board's nets (they are its frontlight clamps there). J1 is the light's own pin header, D1-D12 its LEDs and diodes (so D3
+and D8 are also two of the light's own LEDs where its LED chains are traced), R1/R2 its resistors.
 
 Reviewer: electrical / schematic / polarity / handedness. Started 2026-09-25.
 Status: complete; see Summary at the end.

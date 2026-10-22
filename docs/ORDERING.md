@@ -1,6 +1,6 @@
 # Ordering (rev B)
 
-Rev B is designed and CAD-checked but **not built or tested**. The order files come from `pcb/tools/make_outputs.py`; do not edit them by hand. Short generated version: [pcb/docs/jlc-notes.md](../pcb/docs/jlc-notes.md).
+The rev B board and the rev B housing are built and work; the rev C housing (enclosing hood, rounder brow, rabbeted seam) is checked in CAD only and has not been printed (see the [README](../README.md)). The order files come from `pcb/tools/make_outputs.py`; do not edit them by hand. Short generated version: [pcb/docs/jlc-notes.md](../pcb/docs/jlc-notes.md).
 
 ## 1. PCB (JLCPCB)
 

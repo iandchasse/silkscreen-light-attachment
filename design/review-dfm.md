@@ -1,5 +1,8 @@
 # Review: DFM, fab outputs, ordering, sourcing (rev A)
 
+The light's own parts named here: J1 is its pin header (the 1x2 pin header on rev A), D1-D12 its LEDs and diodes, R1/R2
+its resistors.
+
 Reviewer: DFM/ordering subagent, 2026-09-25. Status: COMPLETE (sections 1-5 + findings F1-F9).
 
 ## 1. Fab outputs

@@ -1,6 +1,6 @@
 # Safety and test (rev B)
 
-Rev B has not been built or powered. Numbers come from [pcb/docs/design_summary.md](../pcb/docs/design_summary.md) and [housing/out/REPORT.md](../housing/out/REPORT.md) unless marked **derived** (worked out here from them).
+The rev B board and the rev B housing have been built and powered, and work (see the [README](../README.md)); the rev C housing is checked in CAD only and has not been printed. Numbers come from [pcb/docs/design_summary.md](../pcb/docs/design_summary.md) and [housing/out/REPORT.md](../housing/out/REPORT.md) unless marked **derived** (worked out here from them).
 
 ## 1. The rules
 
@@ -54,8 +54,8 @@ Both are under the LEDs' 80 mA pulse rating, but that rating is for 0.1 ms pulse
 
 ## 5. Keying and misinsertion
 
-- **Only 3 pins carry metal:** the header's pins 5, 6 and 11. There is no pin, pad or copper at any other position. The nearest copper is 1.39 mm from pin 4 (ground, next to LED_SW) and 1.69 mm from pin 12 (the raw battery).
-- **The cap keys the plug.** The case's opening over the header is off-centre, so a cap turned round puts the pins on the solid top of the case. The walls hold the side-to-side play to 0.052 mm by the time the pin tips reach the header, so each pin can only enter its own socket. Pin depth in the header: 4.72-5.05 mm nominal, 4.39-5.38 mm worst case, inside the 3.7-6.0 mm window.
+- **Only 3 pins carry metal:** the expansion header's pins 5, 6 and 11. There is no pin, pad or copper at any other position. The nearest copper is 1.39 mm from pin 4 (ground, next to LED_SW) and 1.69 mm from pin 12 (the raw battery).
+- **The cap keys the plug.** The case's opening over the expansion header is off-centre, so a cap turned round puts the pins on the solid top of the case. The walls hold the side-to-side play to 0.052 mm by the time the pin tips reach the expansion header, so each pin can only enter its own socket. Pin depth in the header: 4.72-5.05 mm nominal, 4.39-5.38 mm worst case, inside the 3.7-6.0 mm window.
 - **Why the bare board must not be plugged in.** Every shifted, turned and mirrored placement of a bare 3-pin plug was checked ([research/electrical-j6.md](../research/electrical-j6.md) §5). With 200 Ω the main board is safe in all of them. The LEDs are not: some placements put the driver's full output (up to 25.5 V, or 31.4 V) backwards across a string with no diode to stop it, and the anode-on-LED_SW, return-on-ground case pushes about 83 mA on a TPS923611 board until the driver latches off. Neither can happen with the cap on.
 
 ## 6. TPS923611 main boards
@@ -68,4 +68,4 @@ The frontlight connector (`J3`) and the expansion header (`J6`) share one curren
 
 ## 8. Not yet tested
 
-Nothing is proven on hardware yet: the fit and press feel on a real case, the pin depth in a real header, the light on the page, the thin screw-hole skins in the print, and the bench numbers above.
+Proven on hardware with the rev B parts: the pins line up with the expansion header, the cap fits the 4.26" case and snaps on, and the light works. Not yet recorded here, or untested for the rev C housing (CAD only, not printed): the press feel, the pin depth in a real expansion header, the thin screw-hole skins in the print, and measured values for the bench numbers above.
