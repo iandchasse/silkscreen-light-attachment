@@ -1,5 +1,7 @@
 # Housing rev B - progress
 
+J6 is the main board's expansion header; SW10 is its power button, the right side key.
+
 Contract: `design/DESIGN-SPEC-revB.md`. Rev A (clip + cover + carrier, rod lens) notes: `archive/rev-A-rod-lens/housing/PROGRESS.md`.
 
 ## State (2026-09-26, polish pass): DONE, build.py exit 0, all checks PASS

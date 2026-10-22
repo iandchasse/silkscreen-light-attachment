@@ -1,5 +1,7 @@
 # Light PCBA (rev B, "simple") - PROGRESS
 
+J6 is the main board's expansion header; J1/J2 are this board's 1x2 and 1x1 pin headers and R1/R2 its resistors.
+
 Rev A notes (rod lens, carrier, BAW56, 2x2 TSW header): archive/rev-A-rod-lens/pcb/PROGRESS.md (+ its production/, docs/).
 Contract: design/DESIGN-SPEC-revB.md. Nothing committed (per brief).
 

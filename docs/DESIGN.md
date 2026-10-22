@@ -6,8 +6,8 @@ Coordinates are in the case frame, in mm: X along the top edge, Y up the device 
 
 ## Why the top edge
 
-- The case (the consolidated 4.26" standard, strip-less build in silkscreen-enclosures/enclosures/case-426; its top is identical to rev K, checked 2026-09-30) is closed apart from its openings. The only one that reaches a light connector is the opening in the top wall above `J6` (x 42.582..58.922, z −5.415..0.215).
-- `J6` carries the same frontlight nets as `J3`: LED_SW on pin 5, W− on pin 6, C− on pin 11. So the light runs on the stock driver (13.3 mA regulated, warm/cool picked by the firmware) with no board or firmware change.
+- The case (the consolidated 4.26" standard, strip-less build in silkscreen-enclosures/enclosures/case-426; its top is identical to rev K, checked 2026-09-30) is closed apart from its openings. The only one that reaches a light connector is the opening in the top wall above the main board's expansion header (`J6`) (x 42.582..58.922, z −5.415..0.215).
+- `J6` carries the same frontlight nets as the frontlight connector (`J3`): LED_SW on pin 5, W− on pin 6, C− on pin 11. So the light runs on the stock driver (13.3 mA regulated, warm/cool picked by the firmware) with no board or firmware change.
 - `J6` sits at the top edge of the main board, so the light sits above the top of the screen and shines down the page.
 
 ## Why these parts
@@ -37,7 +37,7 @@ Per colour: LED_SW (`J6`-5) → 5 LEDs → 200 Ω → return (W− on `J6`-6, C�
 
 | Item | Value |
 |---|---|
-| String current (main board R37) | 13.3 mA nominal, 13.96 mA max |
+| String current (set by the main board's current-set resistor R37) | 13.3 mA nominal, 13.96 mA max |
 | 5 × V_f at 13.3 mA | 13.00 / 14.25 / 15.75 V (min / typ / max, 25 °C); 16.27 V max at −10 °C |
 | 200 Ω drop | 2.66 V (2.79 V at 13.96 mA); 39 mW |
 | LED_SW lit | 16.01 V min (hot), 17.26 V typ, **19.41 V worst** (cold, max bin) |

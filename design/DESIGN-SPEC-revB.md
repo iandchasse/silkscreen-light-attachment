@@ -17,10 +17,10 @@ limits in `research/electrical-j6.md` and the stock-case facts in `design/mechan
   - top face y 115.60, flat over x 0.91..59.09 and z -4.70..4.20; front edge R1.8, back edge R2.0;
   - plan corners R5 (arc centres (0.91, 110.6) / (59.09, 110.6));
   - sides x -4.09 / 64.09, flat below y 110.6; front face z 6.00; back face z -6.70;
-  - J6 opening x 42.582..58.922, z -5.415..0.215; J6 face y 112.82..113.15;
+  - J6 (the main board's expansion header) opening x 42.582..58.922, z -5.415..0.215; J6 face y 112.82..113.15;
   - window top edge y 109.1 at the face; active area y 15.10..107.90, x 2.16..57.84;
   - page front z: FT01C 4.98, T01C 4.41, PLAIN 3.926;
-  - right side key SW10: nothing may touch the right side below y 107.0;
+  - right side key SW10 (the power button): nothing may touch the right side below y 107.0;
   - back-face counterbore at (40.2, 112.8), D4.2.
 
 ## Electrical (simplified)

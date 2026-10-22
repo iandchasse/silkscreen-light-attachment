@@ -1,5 +1,9 @@
 # External clip-on light attachment - header + clip-on mechanical spec
 
+Main-board parts named here: J6 is the expansion header (the 2x6 socket on the top edge); SW10 the power button and SW7
+the left-up page key (both side keys); H5 the right-hand mounting hole beside the battery connector. C0-C2 are the rev A
+cover columns, not parts.
+
 Status: COMPLETE for the mechanical concept (2026-09-25). Reconciled with `design/optics-final.md` (done 2026-09-25: 3014 LEDs
 + 4.0 PMMA rod in a PCB-registered carrier), see sec 3f.
 Frame: enclosure frame (X = KiCad X - 44.24; Y = 148.25 - KiCad Y, +Y = top edge; Z = 0 main-PCB rear, +Z toward the screen).

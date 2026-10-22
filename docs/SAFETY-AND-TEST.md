@@ -5,7 +5,7 @@ Rev B has not been built or powered. Numbers come from [pcb/docs/design_summary.
 ## 1. The rules
 
 1. **Frontlight off (brightness 0) before you plug the light in or pull it off.** If it was on with nothing attached, wait about 10 s ([§4](#4-hot-plug-why-the-light-off-rule)).
-2. **Never plug the bare board into `J6`.** Only the cap lines it up ([§5](#5-keying-and-misinsertion)).
+2. **Never plug the bare board into the main board's expansion header (`J6`).** Only the cap lines it up ([§5](#5-keying-and-misinsertion)).
 3. **Remove it by the two ends of the cap**, never by the hood.
 4. **Bench-test a new board** before it goes on the reader ([§2](#2-bench-test-of-the-bare-board)).
 5. **TPS923611 main boards** have less hot-plug margin: rule 1 is a must there ([§6](#6-tps923611-main-boards)).
@@ -22,11 +22,11 @@ Do this after soldering the headers. The pins are `5` (LED_SW, anode), `6` (W−
 
 | + lead | − lead | Expect |
 |---|---|---|
-| 5 | 6 | D1-D5 light (warm); D6-D10 stay dark |
-| 5 | 11 | D6-D10 light (cool); D1-D5 stay dark |
+| 5 | 6 | the five warm LEDs light; the cool ones stay dark |
+| 5 | 11 | the five cool LEDs light; the warm ones stay dark |
 
 - Across the string (5 to 6, or 5 to 11): about **15.7 to 18.4 V**, typically 16.9 V (**derived**: 5 × V_f at 13.3 mA is 13.00 / 14.25 / 15.75 V, plus 2.66 V across 200 Ω). If the supply sits at 22 V and nothing lights, the string is open: look for a reversed or unsoldered LED.
-- Across R1 or R2: about 2.6 V.
+- Across either 200 Ω resistor: about 2.6 V.
 - All five LEDs glow about the same. One dark LED while the rest light means that LED is shorted.
 - **Do not reverse the supply.** Rev B has no blocking diodes, and these LEDs are rated for only 5 V reverse.
 
@@ -54,8 +54,8 @@ Both are under the LEDs' 80 mA pulse rating, but that rating is for 0.1 ms pulse
 
 ## 5. Keying and misinsertion
 
-- **Only 3 pins carry metal:** `J6` pins 5, 6 and 11. There is no pin, pad or copper at any other `J6` position. The nearest copper is 1.39 mm from pin 4 (ground, next to LED_SW) and 1.69 mm from pin 12 (the raw battery).
-- **The cap keys the plug.** The case's `J6` opening is off-centre, so a cap turned round puts the pins on the solid top of the case. The walls hold the side-to-side play to 0.052 mm by the time the pin tips reach `J6`, so each pin can only enter its own socket. Pin depth in `J6`: 4.72-5.05 mm nominal, 4.39-5.38 mm worst case, inside the 3.7-6.0 mm window.
+- **Only 3 pins carry metal:** the header's pins 5, 6 and 11. There is no pin, pad or copper at any other position. The nearest copper is 1.39 mm from pin 4 (ground, next to LED_SW) and 1.69 mm from pin 12 (the raw battery).
+- **The cap keys the plug.** The case's opening over the header is off-centre, so a cap turned round puts the pins on the solid top of the case. The walls hold the side-to-side play to 0.052 mm by the time the pin tips reach the header, so each pin can only enter its own socket. Pin depth in the header: 4.72-5.05 mm nominal, 4.39-5.38 mm worst case, inside the 3.7-6.0 mm window.
 - **Why the bare board must not be plugged in.** Every shifted, turned and mirrored placement of a bare 3-pin plug was checked ([research/electrical-j6.md](../research/electrical-j6.md) §5). With 200 Ω the main board is safe in all of them. The LEDs are not: some placements put the driver's full output (up to 25.5 V, or 31.4 V) backwards across a string with no diode to stop it, and the anode-on-LED_SW, return-on-ground case pushes about 83 mA on a TPS923611 board until the driver latches off. Neither can happen with the cap on.
 
 ## 6. TPS923611 main boards
@@ -64,8 +64,8 @@ Some main boards use a TPS923611 in place of the TPS923610 (the out-of-stock swa
 
 ## 7. Shared driver
 
-`J3` and `J6` share one current-regulated driver (13.3 mA). With a panel frontlight on `J3` as well, the two share that current unevenly: safe, but dim. This light is not designed for that.
+The frontlight connector (`J3`) and the expansion header (`J6`) share one current-regulated driver (13.3 mA). With a panel frontlight on the frontlight connector as well, the two share that current unevenly: safe, but dim. This light is not designed for that.
 
 ## 8. Not yet tested
 
-Nothing is proven on hardware yet: the fit and press feel on a real case, the pin depth in a real `J6`, the light on the page, the thin screw-hole skins in the print, and the bench numbers above.
+Nothing is proven on hardware yet: the fit and press feel on a real case, the pin depth in a real header, the light on the page, the thin screw-hole skins in the print, and the bench numbers above.

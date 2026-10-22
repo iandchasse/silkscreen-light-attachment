@@ -32,7 +32,7 @@ LED_MONIT is ESP32 IO2: LED_SW through a 1 MΩ / 120 kΩ divider (ratio 0.1071),
 
 - Margins: 0.32 V between the highest lit reading and the threshold, 0.20 V between the threshold and the lowest open reading (**derived**).
 - **Above the threshold:** report "no light, or not seated" and set the duty to 0 (shutdown).
-- **Probe only when the user acts** (turns the light on, or raises brightness from 0). **Never probe periodically.** Every probe with nothing attached charges C9 back up to the over-voltage limit, which recreates the hot-plug case for the next plug-in ([SAFETY-AND-TEST §4](SAFETY-AND-TEST.md#4-hot-plug-why-the-light-off-rule)).
+- **Probe only when the user acts** (turns the light on, or raises brightness from 0). **Never probe periodically.** Every probe with nothing attached charges the driver's output capacitor (C9) back up to the over-voltage limit, which recreates the hot-plug case for the next plug-in ([SAFETY-AND-TEST §4](SAFETY-AND-TEST.md#4-hot-plug-why-the-light-off-rule)).
 - At boot, if the restored brightness is above 0, run the check once. If it reads open, shut down and do not retry until the user acts.
 
 ## 3. Over-voltage latch recovery
@@ -50,8 +50,8 @@ LED_MONIT is ESP32 IO2: LED_SW through a 1 MΩ / 120 kΩ divider (ratio 0.1071),
 ## 5. User interface
 
 - Add a hint: "Switch the light off before attaching or removing the clip-on light." Off means brightness 0; then wait about 10 s.
-- No brightness cap is needed. The main board's R37 fixes the total current at 13.96 mA or less.
-- If a panel frontlight on `J3` and this light on `J6` are both connected, they share the same regulated current unevenly: safe, but dim.
+- No brightness cap is needed. The main board's current-set resistor (R37) fixes the total current at 13.96 mA or less.
+- If a panel frontlight on the frontlight connector (`J3`) and this light on the expansion header (`J6`) are both connected, they share the same regulated current unevenly: safe, but dim.
 
 ## 6. Not in scope
 

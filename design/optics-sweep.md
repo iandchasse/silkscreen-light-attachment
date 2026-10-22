@@ -371,7 +371,7 @@ ASSUMED ~3 lm per LED, multiply the lux by about 3.
   - Refraction to the ink plane (about 1 mm deep under the FT01C stack).
 - **Beam patterns are idealised cos^m.** Real narrow-beam SMD LEDs have side lobes; use the chosen part's radiation
   diagram (the tool takes any `angle=`).
-- **The ~3 lm per LED figure is an assumption.** The drive current is fixed at 13.3 mA per string (R37).
+- **The ~3 lm per LED figure is an assumption.** The drive current is fixed at 13.3 mA per string (by the main board's current-set resistor R37).
 - **Colour mix** is for both strings lit at equal duty. Firmware time-multiplexes at 10 kHz, so the eye averages them.
 - **Tilt-away and tall-brow geometries point more light toward the reader.** The visor must hide the emitters. Model it
   with `visor_z=` / `visor_y=` in `--eval`.

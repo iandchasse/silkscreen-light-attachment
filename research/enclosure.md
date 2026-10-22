@@ -1,5 +1,8 @@
 # Enclosure research (silkscreen-enclosure-claude rev K) for the top light attachment
 
+Main-board parts named here: J6 is the expansion header; SW10 the power button and SW7 the left-up page key; H3/H4 the
+two bottom mounting holes; J2-J5 the display, frontlight, touch and battery connectors.
+
 `E` = `silkscreen-light-attachment/enclosures/silkscreen-enclosure-claude` (our copy; `diff -rq` of src vs the
 original is clean). `LS` = `silkscreen-light-strip/enclosures/silkscreen-enclosure-claude`. (py) = printed by
 importing `E/src/hw.py`/`params.py` with the venv python. (sect) = measured on the freshly built `E/out/tub.stl`,

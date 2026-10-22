@@ -1,5 +1,8 @@
 # Review: mechanical fit, assembly, optics as built (rev A)
 
+J6 is the main board's expansion header and SW10 its power button (the right side key near the top). C0-C2 are the rev A
+cover columns; D2/D9 are the light's own LEDs.
+
 Status: COMPLETE 2026-09-25. 0 BLOCKER, 4 MAJOR, 5 MINOR.
 
 Method: independent sections of housing/out/E/*.stl, pcb/production/3d/*_pcba_E.stl and the stock case

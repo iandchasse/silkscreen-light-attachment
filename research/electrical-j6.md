@@ -1,4 +1,9 @@
-# J6 as an external-light port: electrical characterisation
+# The expansion header (J6) as an external-light port: electrical characterisation
+
+Main-board parts named here: J6 is the expansion header and J3 the frontlight connector; U10 is the frontlight driver,
+with L2 its inductor, C12 its input and C9 its output capacitor; R37 is the current-set resistor; Q5/Q6 the warm/cool
+string switches; R49/R50 the string bleeders; R39/R41/C31 the monitor divider; R75 the colour-select pull-down and U12
+its inverter; D3/D8 the frontlight clamps; U8 the header's ESD array; CR2 the 3V3-pin clamp; F2 the battery pin's fuse.
 
 Research notes, 2026-09-25. INFERRED = my calculation or a generic assumption, not a source value.
 

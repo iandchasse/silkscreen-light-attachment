@@ -1,4 +1,8 @@
-# J6 mechanical definition (enclosure frame) - research
+# Expansion header (J6) mechanical definition (enclosure frame) - research
+
+Main-board parts named here: J6 is the expansion header; H1 the top-right mounting hole and H5 the right-hand one beside
+the battery connector; SW10 the power button; U8 the header's ESD array; D3/D8 the frontlight clamps; CR2/CR3 the 3V3-
+and battery-pin clamps; F2 the battery pin's fuse.
 
 Status: COMPLETE (2026-09-25)
 

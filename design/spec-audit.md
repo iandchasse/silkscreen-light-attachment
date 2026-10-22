@@ -1,5 +1,8 @@
 # Adversarial audit: mechanical + optics interface (pre-implementation)
 
+J6 is the main board's expansion header; SW10 is its power button and SW7 its left-up page key (side keys near the top
+of the case). J1 is the light's own pin header; C0/C1 are the rev A cover columns.
+
 Status: DONE 2026-09-25. Audited design/mechanical-spec.md (all numbers) and the geometry of design/optics-final.md.
 Frame: enclosure frame (X = KiCad X - 44.24, Y = 148.25 - KiCad Y, Z = 0 main-PCB rear, +Z toward the screen).
 Evidence: enclosure source (A\enclosures\silkscreen-enclosure-claude\src params.py / body.py / tub.py / lid.py),

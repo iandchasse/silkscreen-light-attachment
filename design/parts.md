@@ -203,7 +203,7 @@ exact part (the brief prefers 75-100 V for TPS923611 builds).
 
 ---------------------------------------------------------------------------------------------------
 
-## 4. Male header to mate J6 (Sullins PPPC062LJBN-RC)
+## 4. Male header to mate the expansion header J6 (Sullins PPPC062LJBN-RC)
 
 J6 constraints:
 - .025 in (0.64 mm) square contacts.
@@ -257,7 +257,7 @@ Other header notes:
 ## 5. TVS on the accessory
 
 **Recommendation: fit none.**
-- The main board already has D3 SMAJ26A on LED_SW and D8 PESD2IVN-UX on W-/C-.
+- The main board already has the frontlight clamps D3 SMAJ26A on LED_SW and D8 PESD2IVN-UX on W-/C-.
 - The accessory has no ground: pin 4 is unpopulated by rule, so a TVS to GND is impossible.
 - The BAW56 clamp already limits reverse ESD across each string.
 

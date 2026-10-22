@@ -1,5 +1,7 @@
 # Top-edge light attachment: optics and LED final choice
 
+J6 is the main board's expansion header, where the light plugs in; D1-D10 are the light's LEDs and R1/R2 its resistors.
+
 Status: rev 1 done 2026-09-25; **rev 2 (LCSC LED, PCB 118.61) done 2026-09-25, see the next section.** Scope: the EXTERNAL clip-on only. Frame: enclosure frame (X = KiCad X - 44.24,
 Y = 148.25 - KiCad Y, +Y = top edge, Z = 0 at the main-PCB rear, +Z toward the viewer). "d" = distance below the
 active area's top edge (y 107.90). Elevation angle theta is measured in the Y-Z plane from -Y (down the page); + means

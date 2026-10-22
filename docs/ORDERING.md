@@ -42,10 +42,10 @@ All three are JLC Extended parts. The LED MPN is the same for every colour tempe
 
 | Ref | Part | LCSC | Stock on 2026-09-25 |
 |---|---|---|---|
-| `J1` (`J6` pins 5 and 6) | Hong Cheng HC-PZ254-11.5L-1x2PZ, 1 × 2 | [C27985187](https://www.lcsc.com/product-detail/pin-headers_hong-cheng-hc-pz254-11-5l-1x2pz_C27985187.html) | 24,852 |
-| `J2` (`J6` pin 11) | Hong Cheng HC-PZ254-11.5L-1x1PZ, 1 × 1 | [C27985186](https://www.lcsc.com/product-detail/pin-headers_hong-cheng-hc-pz254-11-5l-1x1pz_C27985186.html) | 10,775 |
+| `J1` (for the expansion header's pins 5 and 6) | Hong Cheng HC-PZ254-11.5L-1x2PZ, 1 × 2 | [C27985187](https://www.lcsc.com/product-detail/pin-headers_hong-cheng-hc-pz254-11-5l-1x2pz_C27985187.html) | 24,852 |
+| `J2` (for pin 11) | Hong Cheng HC-PZ254-11.5L-1x1PZ, 1 × 1 | [C27985186](https://www.lcsc.com/product-detail/pin-headers_hong-cheng-hc-pz254-11-5l-1x1pz_C27985186.html) | 10,775 |
 
-- Any standard 2.54 mm straight male header with a **2.5 mm body, 6.0 mm post and 3.0 mm tail** works. DigiKey: Harwin M20-9990246 (DigiKey product 3728226), a 1 × 2 with a 6.1 mm post; cut one pin from a second one for `J2`.
+- Any standard 2.54 mm straight male header with a **2.5 mm body, 6.0 mm post and 3.0 mm tail** works. DigiKey: Harwin M20-9990246 (DigiKey product 3728226), a 1 × 2 with a 6.1 mm post; cut one pin from a second one for the 1 × 1 (`J2`).
 - Also get a spare 2.54 mm **2-row female header** (2 × 2 or longer). It is the soldering jig.
 - Buy a few spares: they cost almost nothing.
 
@@ -66,7 +66,7 @@ All three are JLC Extended parts. The LED MPN is the same for every colour tempe
 ## 6. Before you pay
 
 - [ ] Thickness 1.0 mm, 2 layers.
-- [ ] Assembly on the top (LED) side only: 14 placements, or 12 if you unticked J1/J2.
+- [ ] Assembly on the top (LED) side only: 14 placements, or 12 if you unticked the two headers (J1/J2).
 - [ ] Every LED's cathode mark is on its large pad in the preview.
 - [ ] Headers, the female-header jig and M2 × 3 screws ordered separately.
 - [ ] Screws are 3 mm long (or the parts were printed with "Detect thin wall" on).

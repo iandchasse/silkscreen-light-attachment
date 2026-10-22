@@ -1,5 +1,9 @@
 # Final completeness + consistency audit (independent)
 
+Parts named here: on the main board, J6 is the expansion header, J3 the frontlight connector and C9 the frontlight
+driver's output capacitor; on this light, J1 is its pin header and D1-D10 its LEDs. R1-R9 in the first table are
+requirement numbers, and C2 a rev A cover column, not parts.
+
 Auditor: final-audit subagent, 2026-09-25. Scope: request coverage, cross-document consistency,
 reproducibility smoke test, residual risks. Nothing other than this file was edited.
 

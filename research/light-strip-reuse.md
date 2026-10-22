@@ -1,5 +1,9 @@
 # silkscreen-light-strip -> light-attachment reuse analysis
 
+Parts named here: on the main board, J3 is the frontlight connector, J6 the expansion header, R37 the current-set
+resistor and D3/D8 the frontlight clamps. D1-D14 are the light strip's own LEDs and diodes. (`J3` in the `params.py`
+row is the name of a dict in the strip's code.)
+
 `LS` = `W\silkscreen-light-strip` (READ-ONLY; git repo with **no commits**). W = the workspace folder that holds the sibling repos. Status: DONE 2026-09-25.
 
 **Version drift:** `LS/tools/params.py:85` says `per_string: 6` (6 warm/cool pairs, pitch 15.55, plus a 3.68in hinge). README, DESIGN.md and ASSEMBLY.md still describe the 5-pair rev A (pitch 18.56). The current state is params.py plus `docs/images/optics_summary.json` and `production/*.csv` (D1-D12, D13/D14). Use DESIGN.md for the reasoning.

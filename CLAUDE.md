@@ -1,7 +1,7 @@
 # Notes for coding agents
 
 Ian (idc LLC) owns this project: the Silkscreen light attachment, a clip-on warm/cool light that plugs into the main
-board's `J6` through the stock 4.26" case's top opening. Status: the rev B board and rev B housing are built and work;
+board's expansion header (`J6`) through the stock 4.26" case's top opening. Status: the rev B board and rev B housing are built and work;
 the rev C housing (`housing/out/print/`) is checked in CAD only. Machine paths and local notes are in
 `CLAUDE.local.md` (not in git); read it first if it exists.
 
@@ -18,7 +18,7 @@ the rev C housing (`housing/out/print/`) is checked in CAD only. Machine paths a
 - **The housing:** `housing/src/build.py` (a CadQuery venv) builds the base and lid, runs every fit check and exits 1 on
   any failure. It needs `pcb/build/geometry.json` (run the PCB step first) and the stock case's tub/lid meshes:
   `housing/reference/case-426-standard/` by default (a copy from silkscreen-enclosures; refresh rule in its
-  `PROVENANCE.md`), or `SILKSCREEN_CASE_OUT`. The 3.68" case has no `J6` and is not supported.
+  `PROVENANCE.md`), or `SILKSCREEN_CASE_OUT`. The 3.68" board is trimmed and has no expansion header (`J6`), so it is not supported.
 - **Line endings:** `.gitattributes` stores every file as is (`* -text`). Don't add conversion rules: the fab files'
   bytes must stay the bytes that were checked.
 - **Never commit** `workflows/`, `pcb/docs/sources/`, `enclosures/` (the local rev K case copy), G-code, build logs
